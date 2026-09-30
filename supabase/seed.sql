@@ -7,6 +7,7 @@ begin;
 
 -- الماركات
 insert into public.brands (name) values ('Apple') on conflict (name) do nothing;
+insert into public.brands (name) values ('Samsung') on conflict (name) do nothing;
 
 -- أنواع الأجهزة
 insert into public.device_types (name_ar, name_en) values ('هاتف', 'smartphone') on conflict (name_en) do update set name_ar = excluded.name_ar;
@@ -54,6 +55,164 @@ insert into public.colors (name_en, name_ar) values ('Glacier', 'أزرق جلي
 insert into public.colors (name_en, name_ar) values ('Burgundy', 'عنابي') on conflict (name_en, name_ar) do nothing;
 insert into public.colors (name_en, name_ar) values ('Rose Gold', 'ذهبي وردي') on conflict (name_en, name_ar) do nothing;
 insert into public.colors (name_en, name_ar) values ('Jet Black', 'أسود لامع') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Titanium Black', 'أسود تيتانيوم') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Titanium Gray', 'رمادي تيتانيوم') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Titanium Blue', 'أزرق تيتانيوم') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Titanium Silver', 'فضي تيتانيوم') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Awesome Navy', 'كحلي كلاسيكي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Awesome Iceblue', 'أزرق ثلجي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Awesome Lilac', 'بنفسجي فاتح') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Awesome Olive', 'زيتي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Phantom Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Phantom White', 'أبيض') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Pink Gold', 'وردي ذهبي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Cream', 'كريمي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Sky Blue', 'سماوي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Violet', 'بنفسجي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Red', 'أحمر') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Lavender', 'خزامى') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Olive', 'زيتي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Graygreen', 'أخضر رمادي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Beige', 'بيج') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Bora Purple', 'بنفسجي بورا') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Peach', 'خوخي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Awesome Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Awesome White', 'أبيض') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Awesome Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Awesome Peach', 'خوخي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Awesome Gray', 'رمادي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Awesome Mint', 'نعناعي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Copper', 'نحاسي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Deep Green', 'أخضر داكن') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Orange Copper', 'برتقالي نحاسي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Midnight Blue', 'أزرق ليلي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Light Blue', 'أزرق فاتح') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Brown', 'بني') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Nightsky Green', 'أخضر') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Sunrise Copper', 'نحاسي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Waterfall Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Aqua Blue', 'أزرق مائي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Forest Green', 'أخضر غابات') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Phantom Gray', 'رمادي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Phantom Violet', 'بنفسجي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Phantom Pink', 'وردي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Phantom Silver', 'فضي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Phantom Navy', 'أزرق داكن') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Phantom Titanium', 'تيتانيوم') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Phantom Brown', 'بني') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Phantom Green', 'أخضر') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Gray', 'رمادي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Mint', 'نعناعي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Awesome Violet', 'بنفسجي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Laser Green', 'أخضر') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Blazing Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Icy Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Sea Green', 'أخضر') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Celestial Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Denim Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Denim Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Matte Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Matte Aqua', 'أزرق مائي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Laser Gray', 'رمادي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Laser Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Cosmic Grey', 'رمادي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Cloud Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Cloud Pink', 'وردي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Cloud White', 'أبيض') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Cosmic Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Cloud Lavender', 'خزامى') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Cloud Mint', 'نعناعي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Cloud Navy', 'كحلي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Cloud Red', 'أحمر') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Cloud Orange', 'برتقالي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Mystic Bronze', 'برونزي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Mystic Gray', 'رمادي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Mystic Green', 'أخضر') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Mystic Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Mystic White', 'أبيض') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Aura Glow', 'متوهج') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Aura Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Aura Red', 'أحمر') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism White', 'أبيض') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Mirror Black', 'أسود مرايا') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Mirror Purple', 'بنفسجي مرايا') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Mirror Gold', 'ذهبي مرايا') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Crush Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Crush White', 'أبيض') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Crush Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Crush Red', 'أحمر') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Crush Pink', 'وردي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Cube Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Cube White', 'أبيض') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Cube Pink', 'وردي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Crush Silver', 'فضي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Cube Silver', 'فضي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Cube Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Metallic Blue', 'أزرق معدني') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Charcoal Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Midnight Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Ocean Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Space Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Mirage Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Mirage Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Electric Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Corporate Green', 'أخضر') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Green', 'أخضر') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Canary Yellow', 'أصفر') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Flamingo Pink', 'وردي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Ceramic Black', 'سيراميك أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Ceramic White', 'سيراميك أبيض') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Majestic Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Royal Gold', 'ذهبي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Crown Silver', 'فضي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Aura White', 'أبيض') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Aura Pink', 'وردي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Aura Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Space Silver', 'فضي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Cosmos Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Deep Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Crush Green', 'أخضر') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Prism Crush Violet', 'بنفسجي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Daybreak Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Cocktail Orange', 'برتقالي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Angel Gold', 'ذهبي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Ghost White', 'أبيض') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Gradation Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Gradation Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Opal Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Sapphire Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Pearl White', 'أبيض') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Seawater Blue', 'أزرق مائي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Midnight Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Coral Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Titanium Gray', 'رمادي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Lilac Purple', 'بنفسجي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Burgundy Red', 'أحمر عنابي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Sunrise Gold', 'ذهبي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Metallic Copper', 'نحاسي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Lavender Purple', 'بنفسجي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Cloud Silver', 'فضي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Lavender', 'بنفسجي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Orchid Grey', 'رمادي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Caviar Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Lemonade Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Bubblegum Pink', 'وردي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Orchid Gray', 'رمادي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Purple', 'بنفسجي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Arctic Silver', 'فضي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Maple Gold', 'ذهبي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Rose Pink', 'وردي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Deepsea Blue', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Star Pink', 'وردي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Onyx Black', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Platinum Gold', 'ذهبي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Black Sky', 'أسود') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Gold Sand', 'ذهبي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Blue Mist', 'أزرق') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Peach Cloud', 'خوخي') on conflict (name_en, name_ar) do nothing;
+insert into public.colors (name_en, name_ar) values ('Rose Gold', 'وردي ذهبي') on conflict (name_en, name_ar) do nothing;
 
 -- الموديلات
 insert into public.models (brand_id, device_type_id, name, sort_order)
@@ -540,6 +699,641 @@ insert into public.models (brand_id, device_type_id, name, sort_order)
 select b.id, dt.id, 'Apple Watch SE (2nd gen)', 97
 from public.brands b, public.device_types dt
 where b.name = 'Apple' and dt.name_en = 'smartwatch'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S26', 98
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S26+', 99
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S26 Ultra', 100
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A37 5G', 101
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A57 5G', 102
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S22', 103
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S22+', 104
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S22 Ultra', 105
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S21 FE 5G', 106
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Z Fold 4', 107
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Z Flip 4', 108
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A13', 109
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A23', 110
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A33 5G', 111
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A53 5G', 112
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A73 5G', 113
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A04', 114
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A04s', 115
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M13', 116
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M23 5G', 117
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M33 5G', 118
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M53 5G', 119
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy F13', 120
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy F23 5G', 121
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S21 5G', 122
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S21+ 5G', 123
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S21 Ultra 5G', 124
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Z Fold 3 5G', 125
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Z Flip 3 5G', 126
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A02', 127
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A02s', 128
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A12', 129
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A22', 130
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A22 5G', 131
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A32', 132
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A32 5G', 133
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A52', 134
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A52 5G', 135
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A52s 5G', 136
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A72', 137
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M12', 138
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M22', 139
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M32', 140
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M52 5G', 141
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy F12', 142
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy F22', 143
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy F42 5G', 144
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy F62', 145
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S20', 146
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S20+', 147
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S20 Ultra', 148
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S20 FE', 149
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Note 20', 150
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Note 20 Ultra', 151
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Note 10 Lite', 152
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S10 Lite', 153
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Z Flip', 154
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Z Flip 5G', 155
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Z Fold 2 5G', 156
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A01', 157
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A11', 158
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A21', 159
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A21s', 160
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A31', 161
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A41', 162
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A51', 163
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A51 5G', 164
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A71', 165
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A71 5G', 166
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M01', 167
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M11', 168
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M21', 169
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M31', 170
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M31s', 171
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M51', 172
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy F41', 173
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S10', 174
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S10+', 175
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S10e', 176
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S10 5G', 177
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Note 10', 178
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Note 10+', 179
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Fold', 180
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A10', 181
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A10s', 182
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A20', 183
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A20s', 184
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A30', 185
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A30s', 186
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A40', 187
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A50', 188
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A50s', 189
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A60', 190
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A70', 191
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A70s', 192
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A80', 193
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A90 5G', 194
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M10', 195
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M20', 196
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M30', 197
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M30s', 198
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy M40', 199
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S9', 200
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S9+', 201
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Note 9', 202
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A6', 203
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A6+', 204
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A7 (2018)', 205
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A8 (2018)', 206
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A8+ (2018)', 207
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A8s', 208
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A9 (2018)', 209
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy J4', 210
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy J6', 211
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy J8', 212
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S8', 213
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy S8+', 214
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Note 8', 215
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy Note FE', 216
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A3 (2017)', 217
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A5 (2017)', 218
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy A7 (2017)', 219
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy J3 (2017)', 220
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy J5 (2017)', 221
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy J7 (2017)', 222
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy J7 Pro', 223
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Galaxy J7 Prime', 224
+from public.brands b, public.device_types dt
+where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 
 -- ألوان كل موديل
@@ -3135,8 +3929,3728 @@ where b.name = 'Apple' and mo.name = 'Apple Watch SE (2nd gen)'
   and co.name_en is not distinct from 'Silver'
   and co.name_ar is not distinct from 'فضي'
 on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S26'
+  and co.name_en is not distinct from 'Titanium Black'
+  and co.name_ar is not distinct from 'أسود تيتانيوم'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S26'
+  and co.name_en is not distinct from 'Titanium Gray'
+  and co.name_ar is not distinct from 'رمادي تيتانيوم'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S26'
+  and co.name_en is not distinct from 'Titanium Blue'
+  and co.name_ar is not distinct from 'أزرق تيتانيوم'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S26'
+  and co.name_en is not distinct from 'Titanium Silver'
+  and co.name_ar is not distinct from 'فضي تيتانيوم'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S26+'
+  and co.name_en is not distinct from 'Titanium Black'
+  and co.name_ar is not distinct from 'أسود تيتانيوم'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S26+'
+  and co.name_en is not distinct from 'Titanium Gray'
+  and co.name_ar is not distinct from 'رمادي تيتانيوم'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S26+'
+  and co.name_en is not distinct from 'Titanium Blue'
+  and co.name_ar is not distinct from 'أزرق تيتانيوم'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S26+'
+  and co.name_en is not distinct from 'Titanium Silver'
+  and co.name_ar is not distinct from 'فضي تيتانيوم'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S26 Ultra'
+  and co.name_en is not distinct from 'Titanium Black'
+  and co.name_ar is not distinct from 'أسود تيتانيوم'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S26 Ultra'
+  and co.name_en is not distinct from 'Titanium Gray'
+  and co.name_ar is not distinct from 'رمادي تيتانيوم'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S26 Ultra'
+  and co.name_en is not distinct from 'Titanium Blue'
+  and co.name_ar is not distinct from 'أزرق تيتانيوم'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S26 Ultra'
+  and co.name_en is not distinct from 'Titanium Silver'
+  and co.name_ar is not distinct from 'فضي تيتانيوم'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A37 5G'
+  and co.name_en is not distinct from 'Awesome Navy'
+  and co.name_ar is not distinct from 'كحلي كلاسيكي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A37 5G'
+  and co.name_en is not distinct from 'Awesome Iceblue'
+  and co.name_ar is not distinct from 'أزرق ثلجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A37 5G'
+  and co.name_en is not distinct from 'Awesome Lilac'
+  and co.name_ar is not distinct from 'بنفسجي فاتح'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A57 5G'
+  and co.name_en is not distinct from 'Awesome Navy'
+  and co.name_ar is not distinct from 'كحلي كلاسيكي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A57 5G'
+  and co.name_en is not distinct from 'Awesome Iceblue'
+  and co.name_ar is not distinct from 'أزرق ثلجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A57 5G'
+  and co.name_en is not distinct from 'Awesome Olive'
+  and co.name_ar is not distinct from 'زيتي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22'
+  and co.name_en is not distinct from 'Phantom Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22'
+  and co.name_en is not distinct from 'Phantom White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22'
+  and co.name_en is not distinct from 'Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22'
+  and co.name_en is not distinct from 'Pink Gold'
+  and co.name_ar is not distinct from 'وردي ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22'
+  and co.name_en is not distinct from 'Graphite'
+  and co.name_ar is not distinct from 'جرافيت'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22'
+  and co.name_en is not distinct from 'Cream'
+  and co.name_ar is not distinct from 'كريمي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22'
+  and co.name_en is not distinct from 'Sky Blue'
+  and co.name_ar is not distinct from 'سماوي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22'
+  and co.name_en is not distinct from 'Violet'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22+'
+  and co.name_en is not distinct from 'Phantom Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22+'
+  and co.name_en is not distinct from 'Phantom White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22+'
+  and co.name_en is not distinct from 'Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22+'
+  and co.name_en is not distinct from 'Pink Gold'
+  and co.name_ar is not distinct from 'وردي ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22+'
+  and co.name_en is not distinct from 'Graphite'
+  and co.name_ar is not distinct from 'جرافيت'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22+'
+  and co.name_en is not distinct from 'Cream'
+  and co.name_ar is not distinct from 'كريمي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22+'
+  and co.name_en is not distinct from 'Sky Blue'
+  and co.name_ar is not distinct from 'سماوي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22+'
+  and co.name_en is not distinct from 'Violet'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22 Ultra'
+  and co.name_en is not distinct from 'Phantom Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22 Ultra'
+  and co.name_en is not distinct from 'Phantom White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22 Ultra'
+  and co.name_en is not distinct from 'Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22 Ultra'
+  and co.name_en is not distinct from 'Burgundy'
+  and co.name_ar is not distinct from 'عنابي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22 Ultra'
+  and co.name_en is not distinct from 'Graphite'
+  and co.name_ar is not distinct from 'جرافيت'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22 Ultra'
+  and co.name_en is not distinct from 'Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S22 Ultra'
+  and co.name_en is not distinct from 'Sky Blue'
+  and co.name_ar is not distinct from 'سماوي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21 FE 5G'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21 FE 5G'
+  and co.name_en is not distinct from 'Graphite'
+  and co.name_ar is not distinct from 'جرافيت'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21 FE 5G'
+  and co.name_en is not distinct from 'Lavender'
+  and co.name_ar is not distinct from 'خزامى'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21 FE 5G'
+  and co.name_en is not distinct from 'Olive'
+  and co.name_ar is not distinct from 'زيتي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Fold 4'
+  and co.name_en is not distinct from 'Graygreen'
+  and co.name_ar is not distinct from 'أخضر رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Fold 4'
+  and co.name_en is not distinct from 'Phantom Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Fold 4'
+  and co.name_en is not distinct from 'Beige'
+  and co.name_ar is not distinct from 'بيج'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Fold 4'
+  and co.name_en is not distinct from 'Burgundy'
+  and co.name_ar is not distinct from 'عنابي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip 4'
+  and co.name_en is not distinct from 'Bora Purple'
+  and co.name_ar is not distinct from 'بنفسجي بورا'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip 4'
+  and co.name_en is not distinct from 'Graphite'
+  and co.name_ar is not distinct from 'جرافيت'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip 4'
+  and co.name_en is not distinct from 'Pink Gold'
+  and co.name_ar is not distinct from 'وردي ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip 4'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A13'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A13'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A13'
+  and co.name_en is not distinct from 'Peach'
+  and co.name_ar is not distinct from 'خوخي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A13'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A23'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A23'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A23'
+  and co.name_en is not distinct from 'Peach'
+  and co.name_ar is not distinct from 'خوخي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A23'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A33 5G'
+  and co.name_en is not distinct from 'Awesome Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A33 5G'
+  and co.name_en is not distinct from 'Awesome White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A33 5G'
+  and co.name_en is not distinct from 'Awesome Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A33 5G'
+  and co.name_en is not distinct from 'Awesome Peach'
+  and co.name_ar is not distinct from 'خوخي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A53 5G'
+  and co.name_en is not distinct from 'Awesome Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A53 5G'
+  and co.name_en is not distinct from 'Awesome White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A53 5G'
+  and co.name_en is not distinct from 'Awesome Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A53 5G'
+  and co.name_en is not distinct from 'Awesome Peach'
+  and co.name_ar is not distinct from 'خوخي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A73 5G'
+  and co.name_en is not distinct from 'Awesome Gray'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A73 5G'
+  and co.name_en is not distinct from 'Awesome White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A73 5G'
+  and co.name_en is not distinct from 'Awesome Mint'
+  and co.name_ar is not distinct from 'نعناعي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A04'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A04'
+  and co.name_en is not distinct from 'Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A04'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A04'
+  and co.name_en is not distinct from 'Copper'
+  and co.name_ar is not distinct from 'نحاسي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A04s'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A04s'
+  and co.name_en is not distinct from 'Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A04s'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A04s'
+  and co.name_en is not distinct from 'Copper'
+  and co.name_ar is not distinct from 'نحاسي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M13'
+  and co.name_en is not distinct from 'Deep Green'
+  and co.name_ar is not distinct from 'أخضر داكن'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M13'
+  and co.name_en is not distinct from 'Orange Copper'
+  and co.name_ar is not distinct from 'برتقالي نحاسي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M13'
+  and co.name_en is not distinct from 'Midnight Blue'
+  and co.name_ar is not distinct from 'أزرق ليلي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M23 5G'
+  and co.name_en is not distinct from 'Deep Green'
+  and co.name_ar is not distinct from 'أخضر داكن'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M23 5G'
+  and co.name_en is not distinct from 'Light Blue'
+  and co.name_ar is not distinct from 'أزرق فاتح'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M23 5G'
+  and co.name_en is not distinct from 'Orange Copper'
+  and co.name_ar is not distinct from 'برتقالي نحاسي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M33 5G'
+  and co.name_en is not distinct from 'Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M33 5G'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M33 5G'
+  and co.name_en is not distinct from 'Brown'
+  and co.name_ar is not distinct from 'بني'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M53 5G'
+  and co.name_en is not distinct from 'Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M53 5G'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M53 5G'
+  and co.name_en is not distinct from 'Brown'
+  and co.name_ar is not distinct from 'بني'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F13'
+  and co.name_en is not distinct from 'Nightsky Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F13'
+  and co.name_en is not distinct from 'Sunrise Copper'
+  and co.name_ar is not distinct from 'نحاسي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F13'
+  and co.name_en is not distinct from 'Waterfall Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F23 5G'
+  and co.name_en is not distinct from 'Aqua Blue'
+  and co.name_ar is not distinct from 'أزرق مائي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F23 5G'
+  and co.name_en is not distinct from 'Forest Green'
+  and co.name_ar is not distinct from 'أخضر غابات'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21 5G'
+  and co.name_en is not distinct from 'Phantom Gray'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21 5G'
+  and co.name_en is not distinct from 'Phantom White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21 5G'
+  and co.name_en is not distinct from 'Phantom Violet'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21 5G'
+  and co.name_en is not distinct from 'Phantom Pink'
+  and co.name_ar is not distinct from 'وردي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21+ 5G'
+  and co.name_en is not distinct from 'Phantom Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21+ 5G'
+  and co.name_en is not distinct from 'Phantom Silver'
+  and co.name_ar is not distinct from 'فضي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21+ 5G'
+  and co.name_en is not distinct from 'Phantom Violet'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21 Ultra 5G'
+  and co.name_en is not distinct from 'Phantom Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21 Ultra 5G'
+  and co.name_en is not distinct from 'Phantom Silver'
+  and co.name_ar is not distinct from 'فضي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21 Ultra 5G'
+  and co.name_en is not distinct from 'Phantom Navy'
+  and co.name_ar is not distinct from 'أزرق داكن'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21 Ultra 5G'
+  and co.name_en is not distinct from 'Phantom Titanium'
+  and co.name_ar is not distinct from 'تيتانيوم'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S21 Ultra 5G'
+  and co.name_en is not distinct from 'Phantom Brown'
+  and co.name_ar is not distinct from 'بني'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Fold 3 5G'
+  and co.name_en is not distinct from 'Phantom Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Fold 3 5G'
+  and co.name_en is not distinct from 'Phantom Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Fold 3 5G'
+  and co.name_en is not distinct from 'Phantom Silver'
+  and co.name_ar is not distinct from 'فضي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip 3 5G'
+  and co.name_en is not distinct from 'Phantom Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip 3 5G'
+  and co.name_en is not distinct from 'Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip 3 5G'
+  and co.name_en is not distinct from 'Lavender'
+  and co.name_ar is not distinct from 'خزامى'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip 3 5G'
+  and co.name_en is not distinct from 'Cream'
+  and co.name_ar is not distinct from 'كريمي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip 3 5G'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip 3 5G'
+  and co.name_en is not distinct from 'Pink'
+  and co.name_ar is not distinct from 'وردي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip 3 5G'
+  and co.name_en is not distinct from 'Gray'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A02'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A02'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A02'
+  and co.name_en is not distinct from 'Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A02'
+  and co.name_en is not distinct from 'Gray'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A02s'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A02s'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A02s'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A02s'
+  and co.name_en is not distinct from 'Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A12'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A12'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A12'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A12'
+  and co.name_en is not distinct from 'Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A22'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A22'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A22'
+  and co.name_en is not distinct from 'Mint'
+  and co.name_ar is not distinct from 'نعناعي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A22'
+  and co.name_en is not distinct from 'Violet'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A22 5G'
+  and co.name_en is not distinct from 'Gray'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A22 5G'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A22 5G'
+  and co.name_en is not distinct from 'Mint'
+  and co.name_ar is not distinct from 'نعناعي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A22 5G'
+  and co.name_en is not distinct from 'Violet'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A32'
+  and co.name_en is not distinct from 'Awesome Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A32'
+  and co.name_en is not distinct from 'Awesome White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A32'
+  and co.name_en is not distinct from 'Awesome Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A32'
+  and co.name_en is not distinct from 'Awesome Violet'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A32 5G'
+  and co.name_en is not distinct from 'Awesome Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A32 5G'
+  and co.name_en is not distinct from 'Awesome White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A32 5G'
+  and co.name_en is not distinct from 'Awesome Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A32 5G'
+  and co.name_en is not distinct from 'Awesome Violet'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A52'
+  and co.name_en is not distinct from 'Awesome Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A52'
+  and co.name_en is not distinct from 'Awesome White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A52'
+  and co.name_en is not distinct from 'Awesome Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A52'
+  and co.name_en is not distinct from 'Awesome Violet'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A52 5G'
+  and co.name_en is not distinct from 'Awesome Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A52 5G'
+  and co.name_en is not distinct from 'Awesome White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A52 5G'
+  and co.name_en is not distinct from 'Awesome Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A52 5G'
+  and co.name_en is not distinct from 'Awesome Violet'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A52s 5G'
+  and co.name_en is not distinct from 'Awesome Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A52s 5G'
+  and co.name_en is not distinct from 'Awesome White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A52s 5G'
+  and co.name_en is not distinct from 'Awesome Mint'
+  and co.name_ar is not distinct from 'نعناعي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A52s 5G'
+  and co.name_en is not distinct from 'Awesome Violet'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A72'
+  and co.name_en is not distinct from 'Awesome Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A72'
+  and co.name_en is not distinct from 'Awesome White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A72'
+  and co.name_en is not distinct from 'Awesome Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A72'
+  and co.name_en is not distinct from 'Awesome Violet'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M12'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M12'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M12'
+  and co.name_en is not distinct from 'Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M22'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M22'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M22'
+  and co.name_en is not distinct from 'Light Blue'
+  and co.name_ar is not distinct from 'أزرق فاتح'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M32'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M32'
+  and co.name_en is not distinct from 'Light Blue'
+  and co.name_ar is not distinct from 'أزرق فاتح'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M32'
+  and co.name_en is not distinct from 'Laser Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M52 5G'
+  and co.name_en is not distinct from 'Blazing Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M52 5G'
+  and co.name_en is not distinct from 'Icy Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M52 5G'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F12'
+  and co.name_en is not distinct from 'Sea Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F12'
+  and co.name_en is not distinct from 'Sky Blue'
+  and co.name_ar is not distinct from 'أزرق سماوي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F12'
+  and co.name_en is not distinct from 'Celestial Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F22'
+  and co.name_en is not distinct from 'Denim Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F22'
+  and co.name_en is not distinct from 'Denim Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F42 5G'
+  and co.name_en is not distinct from 'Matte Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F42 5G'
+  and co.name_en is not distinct from 'Matte Aqua'
+  and co.name_ar is not distinct from 'أزرق مائي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F62'
+  and co.name_en is not distinct from 'Laser Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F62'
+  and co.name_en is not distinct from 'Laser Gray'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F62'
+  and co.name_en is not distinct from 'Laser Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20'
+  and co.name_en is not distinct from 'Cosmic Grey'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20'
+  and co.name_en is not distinct from 'Cloud Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20'
+  and co.name_en is not distinct from 'Cloud Pink'
+  and co.name_ar is not distinct from 'وردي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20'
+  and co.name_en is not distinct from 'Cloud White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20+'
+  and co.name_en is not distinct from 'Cosmic Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20+'
+  and co.name_en is not distinct from 'Cosmic Grey'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20+'
+  and co.name_en is not distinct from 'Cloud Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20+'
+  and co.name_en is not distinct from 'Cloud White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20 Ultra'
+  and co.name_en is not distinct from 'Cosmic Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20 Ultra'
+  and co.name_en is not distinct from 'Cosmic Grey'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20 FE'
+  and co.name_en is not distinct from 'Cloud Lavender'
+  and co.name_ar is not distinct from 'خزامى'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20 FE'
+  and co.name_en is not distinct from 'Cloud Mint'
+  and co.name_ar is not distinct from 'نعناعي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20 FE'
+  and co.name_en is not distinct from 'Cloud Navy'
+  and co.name_ar is not distinct from 'كحلي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20 FE'
+  and co.name_en is not distinct from 'Cloud White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20 FE'
+  and co.name_en is not distinct from 'Cloud Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S20 FE'
+  and co.name_en is not distinct from 'Cloud Orange'
+  and co.name_ar is not distinct from 'برتقالي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 20'
+  and co.name_en is not distinct from 'Mystic Bronze'
+  and co.name_ar is not distinct from 'برونزي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 20'
+  and co.name_en is not distinct from 'Mystic Gray'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 20'
+  and co.name_en is not distinct from 'Mystic Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 20 Ultra'
+  and co.name_en is not distinct from 'Mystic Bronze'
+  and co.name_ar is not distinct from 'برونزي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 20 Ultra'
+  and co.name_en is not distinct from 'Mystic Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 20 Ultra'
+  and co.name_en is not distinct from 'Mystic White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 10 Lite'
+  and co.name_en is not distinct from 'Aura Glow'
+  and co.name_ar is not distinct from 'متوهج'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 10 Lite'
+  and co.name_en is not distinct from 'Aura Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 10 Lite'
+  and co.name_en is not distinct from 'Aura Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10 Lite'
+  and co.name_en is not distinct from 'Prism White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10 Lite'
+  and co.name_en is not distinct from 'Prism Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10 Lite'
+  and co.name_en is not distinct from 'Prism Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip'
+  and co.name_en is not distinct from 'Mirror Black'
+  and co.name_ar is not distinct from 'أسود مرايا'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip'
+  and co.name_en is not distinct from 'Mirror Purple'
+  and co.name_ar is not distinct from 'بنفسجي مرايا'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip'
+  and co.name_en is not distinct from 'Mirror Gold'
+  and co.name_ar is not distinct from 'ذهبي مرايا'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip 5G'
+  and co.name_en is not distinct from 'Mystic Gray'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Flip 5G'
+  and co.name_en is not distinct from 'Mystic Bronze'
+  and co.name_ar is not distinct from 'برونزي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Fold 2 5G'
+  and co.name_en is not distinct from 'Mystic Bronze'
+  and co.name_ar is not distinct from 'برونزي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Z Fold 2 5G'
+  and co.name_en is not distinct from 'Mystic Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A01'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A01'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A01'
+  and co.name_en is not distinct from 'Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A11'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A11'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A11'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A11'
+  and co.name_en is not distinct from 'Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A21'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A21s'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A21s'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A21s'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A21s'
+  and co.name_en is not distinct from 'Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A31'
+  and co.name_en is not distinct from 'Prism Crush Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A31'
+  and co.name_en is not distinct from 'Prism Crush White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A31'
+  and co.name_en is not distinct from 'Prism Crush Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A31'
+  and co.name_en is not distinct from 'Prism Crush Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A41'
+  and co.name_en is not distinct from 'Prism Crush Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A41'
+  and co.name_en is not distinct from 'Prism Crush White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A41'
+  and co.name_en is not distinct from 'Prism Crush Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A51'
+  and co.name_en is not distinct from 'Prism Crush Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A51'
+  and co.name_en is not distinct from 'Prism Crush White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A51'
+  and co.name_en is not distinct from 'Prism Crush Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A51'
+  and co.name_en is not distinct from 'Prism Crush Pink'
+  and co.name_ar is not distinct from 'وردي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A51 5G'
+  and co.name_en is not distinct from 'Prism Cube Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A51 5G'
+  and co.name_en is not distinct from 'Prism Cube White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A51 5G'
+  and co.name_en is not distinct from 'Prism Cube Pink'
+  and co.name_ar is not distinct from 'وردي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A71'
+  and co.name_en is not distinct from 'Prism Crush Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A71'
+  and co.name_en is not distinct from 'Prism Crush Silver'
+  and co.name_ar is not distinct from 'فضي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A71'
+  and co.name_en is not distinct from 'Prism Crush Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A71'
+  and co.name_en is not distinct from 'Prism Crush Pink'
+  and co.name_ar is not distinct from 'وردي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A71 5G'
+  and co.name_en is not distinct from 'Prism Cube Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A71 5G'
+  and co.name_en is not distinct from 'Prism Cube Silver'
+  and co.name_ar is not distinct from 'فضي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A71 5G'
+  and co.name_en is not distinct from 'Prism Cube Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M01'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M01'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M01'
+  and co.name_en is not distinct from 'Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M11'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M11'
+  and co.name_en is not distinct from 'Metallic Blue'
+  and co.name_ar is not distinct from 'أزرق معدني'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M11'
+  and co.name_en is not distinct from 'Violet'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M21'
+  and co.name_en is not distinct from 'Charcoal Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M21'
+  and co.name_en is not distinct from 'Midnight Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M31'
+  and co.name_en is not distinct from 'Ocean Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M31'
+  and co.name_en is not distinct from 'Space Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M31'
+  and co.name_en is not distinct from 'Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M31s'
+  and co.name_en is not distinct from 'Mirage Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M31s'
+  and co.name_en is not distinct from 'Mirage Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M51'
+  and co.name_en is not distinct from 'Celestial Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M51'
+  and co.name_en is not distinct from 'Electric Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F41'
+  and co.name_en is not distinct from 'Ocean Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F41'
+  and co.name_en is not distinct from 'Space Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy F41'
+  and co.name_en is not distinct from 'Corporate Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10'
+  and co.name_en is not distinct from 'Prism White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10'
+  and co.name_en is not distinct from 'Prism Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10'
+  and co.name_en is not distinct from 'Prism Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10'
+  and co.name_en is not distinct from 'Prism Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10'
+  and co.name_en is not distinct from 'Canary Yellow'
+  and co.name_ar is not distinct from 'أصفر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10'
+  and co.name_en is not distinct from 'Flamingo Pink'
+  and co.name_ar is not distinct from 'وردي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10+'
+  and co.name_en is not distinct from 'Prism White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10+'
+  and co.name_en is not distinct from 'Prism Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10+'
+  and co.name_en is not distinct from 'Prism Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10+'
+  and co.name_en is not distinct from 'Prism Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10+'
+  and co.name_en is not distinct from 'Ceramic Black'
+  and co.name_ar is not distinct from 'سيراميك أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10+'
+  and co.name_en is not distinct from 'Ceramic White'
+  and co.name_ar is not distinct from 'سيراميك أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10e'
+  and co.name_en is not distinct from 'Prism White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10e'
+  and co.name_en is not distinct from 'Prism Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10e'
+  and co.name_en is not distinct from 'Prism Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10e'
+  and co.name_en is not distinct from 'Prism Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10e'
+  and co.name_en is not distinct from 'Canary Yellow'
+  and co.name_ar is not distinct from 'أصفر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10 5G'
+  and co.name_en is not distinct from 'Majestic Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10 5G'
+  and co.name_en is not distinct from 'Royal Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S10 5G'
+  and co.name_en is not distinct from 'Crown Silver'
+  and co.name_ar is not distinct from 'فضي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 10'
+  and co.name_en is not distinct from 'Aura Glow'
+  and co.name_ar is not distinct from 'متوهج'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 10'
+  and co.name_en is not distinct from 'Aura Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 10'
+  and co.name_en is not distinct from 'Aura White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 10'
+  and co.name_en is not distinct from 'Aura Pink'
+  and co.name_ar is not distinct from 'وردي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 10'
+  and co.name_en is not distinct from 'Aura Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 10+'
+  and co.name_en is not distinct from 'Aura Glow'
+  and co.name_ar is not distinct from 'متوهج'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 10+'
+  and co.name_en is not distinct from 'Aura Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 10+'
+  and co.name_en is not distinct from 'Aura White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 10+'
+  and co.name_en is not distinct from 'Aura Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Fold'
+  and co.name_en is not distinct from 'Space Silver'
+  and co.name_ar is not distinct from 'فضي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Fold'
+  and co.name_en is not distinct from 'Cosmos Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A10'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A10'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A10'
+  and co.name_en is not distinct from 'Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A10s'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A10s'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A10s'
+  and co.name_en is not distinct from 'Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A10s'
+  and co.name_en is not distinct from 'Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A20'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A20'
+  and co.name_en is not distinct from 'Deep Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A20'
+  and co.name_en is not distinct from 'Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A20'
+  and co.name_en is not distinct from 'Coral'
+  and co.name_ar is not distinct from 'مرجاني'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A20s'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A20s'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A20s'
+  and co.name_en is not distinct from 'Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A20s'
+  and co.name_en is not distinct from 'Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A30'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A30'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A30'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A30'
+  and co.name_en is not distinct from 'Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A30s'
+  and co.name_en is not distinct from 'Prism Crush Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A30s'
+  and co.name_en is not distinct from 'Prism Crush White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A30s'
+  and co.name_en is not distinct from 'Prism Crush Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A30s'
+  and co.name_en is not distinct from 'Prism Crush Violet'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A40'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A40'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A40'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A40'
+  and co.name_en is not distinct from 'Coral'
+  and co.name_ar is not distinct from 'مرجاني'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A50'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A50'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A50'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A50'
+  and co.name_en is not distinct from 'Coral'
+  and co.name_ar is not distinct from 'مرجاني'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A50s'
+  and co.name_en is not distinct from 'Prism Crush Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A50s'
+  and co.name_en is not distinct from 'Prism Crush White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A50s'
+  and co.name_en is not distinct from 'Prism Crush Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A50s'
+  and co.name_en is not distinct from 'Prism Crush Violet'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A60'
+  and co.name_en is not distinct from 'Daybreak Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A60'
+  and co.name_en is not distinct from 'Cocktail Orange'
+  and co.name_ar is not distinct from 'برتقالي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A70'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A70'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A70'
+  and co.name_en is not distinct from 'Coral'
+  and co.name_ar is not distinct from 'مرجاني'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A70'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A70s'
+  and co.name_en is not distinct from 'Prism Crush Red'
+  and co.name_ar is not distinct from 'أحمر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A70s'
+  and co.name_en is not distinct from 'Prism Crush White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A70s'
+  and co.name_en is not distinct from 'Prism Crush Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A80'
+  and co.name_en is not distinct from 'Angel Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A80'
+  and co.name_en is not distinct from 'Ghost White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A80'
+  and co.name_en is not distinct from 'Phantom Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A90 5G'
+  and co.name_en is not distinct from 'White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A90 5G'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M10'
+  and co.name_en is not distinct from 'Ocean Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M10'
+  and co.name_en is not distinct from 'Charcoal Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M20'
+  and co.name_en is not distinct from 'Ocean Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M20'
+  and co.name_en is not distinct from 'Charcoal Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M30'
+  and co.name_en is not distinct from 'Gradation Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M30'
+  and co.name_en is not distinct from 'Gradation Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M30s'
+  and co.name_en is not distinct from 'Opal Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M30s'
+  and co.name_en is not distinct from 'Sapphire Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M30s'
+  and co.name_en is not distinct from 'Pearl White'
+  and co.name_ar is not distinct from 'أبيض'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M40'
+  and co.name_en is not distinct from 'Midnight Blue'
+  and co.name_ar is not distinct from 'أزرق ليلي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy M40'
+  and co.name_en is not distinct from 'Seawater Blue'
+  and co.name_ar is not distinct from 'أزرق مائي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S9'
+  and co.name_en is not distinct from 'Midnight Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S9'
+  and co.name_en is not distinct from 'Coral Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S9'
+  and co.name_en is not distinct from 'Titanium Gray'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S9'
+  and co.name_en is not distinct from 'Lilac Purple'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S9'
+  and co.name_en is not distinct from 'Burgundy Red'
+  and co.name_ar is not distinct from 'أحمر عنابي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S9'
+  and co.name_en is not distinct from 'Sunrise Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S9+'
+  and co.name_en is not distinct from 'Midnight Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S9+'
+  and co.name_en is not distinct from 'Coral Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S9+'
+  and co.name_en is not distinct from 'Titanium Gray'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S9+'
+  and co.name_en is not distinct from 'Lilac Purple'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S9+'
+  and co.name_en is not distinct from 'Burgundy Red'
+  and co.name_ar is not distinct from 'أحمر عنابي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S9+'
+  and co.name_en is not distinct from 'Sunrise Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 9'
+  and co.name_en is not distinct from 'Midnight Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 9'
+  and co.name_en is not distinct from 'Ocean Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 9'
+  and co.name_en is not distinct from 'Metallic Copper'
+  and co.name_ar is not distinct from 'نحاسي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 9'
+  and co.name_en is not distinct from 'Lavender Purple'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 9'
+  and co.name_en is not distinct from 'Cloud Silver'
+  and co.name_ar is not distinct from 'فضي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A6'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A6'
+  and co.name_en is not distinct from 'Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A6'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A6'
+  and co.name_en is not distinct from 'Lavender'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A6+'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A6+'
+  and co.name_en is not distinct from 'Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A6+'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A6+'
+  and co.name_en is not distinct from 'Lavender'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A7 (2018)'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A7 (2018)'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A7 (2018)'
+  and co.name_en is not distinct from 'Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A7 (2018)'
+  and co.name_en is not distinct from 'Pink'
+  and co.name_ar is not distinct from 'وردي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A8 (2018)'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A8 (2018)'
+  and co.name_en is not distinct from 'Orchid Grey'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A8 (2018)'
+  and co.name_en is not distinct from 'Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A8 (2018)'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A8+ (2018)'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A8+ (2018)'
+  and co.name_en is not distinct from 'Orchid Grey'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A8+ (2018)'
+  and co.name_en is not distinct from 'Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A8+ (2018)'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A8s'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A8s'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A8s'
+  and co.name_en is not distinct from 'Green'
+  and co.name_ar is not distinct from 'أخضر'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A9 (2018)'
+  and co.name_en is not distinct from 'Caviar Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A9 (2018)'
+  and co.name_en is not distinct from 'Lemonade Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A9 (2018)'
+  and co.name_en is not distinct from 'Bubblegum Pink'
+  and co.name_ar is not distinct from 'وردي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J4'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J4'
+  and co.name_en is not distinct from 'Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J4'
+  and co.name_en is not distinct from 'Orchid Gray'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J6'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J6'
+  and co.name_en is not distinct from 'Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J6'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J8'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J8'
+  and co.name_en is not distinct from 'Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J8'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J8'
+  and co.name_en is not distinct from 'Purple'
+  and co.name_ar is not distinct from 'بنفسجي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S8'
+  and co.name_en is not distinct from 'Midnight Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S8'
+  and co.name_en is not distinct from 'Orchid Gray'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S8'
+  and co.name_en is not distinct from 'Arctic Silver'
+  and co.name_ar is not distinct from 'فضي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S8'
+  and co.name_en is not distinct from 'Coral Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S8'
+  and co.name_en is not distinct from 'Maple Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S8'
+  and co.name_en is not distinct from 'Rose Pink'
+  and co.name_ar is not distinct from 'وردي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S8'
+  and co.name_en is not distinct from 'Burgundy Red'
+  and co.name_ar is not distinct from 'أحمر عنابي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S8+'
+  and co.name_en is not distinct from 'Midnight Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S8+'
+  and co.name_en is not distinct from 'Orchid Gray'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S8+'
+  and co.name_en is not distinct from 'Arctic Silver'
+  and co.name_ar is not distinct from 'فضي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S8+'
+  and co.name_en is not distinct from 'Coral Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S8+'
+  and co.name_en is not distinct from 'Maple Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy S8+'
+  and co.name_en is not distinct from 'Rose Pink'
+  and co.name_ar is not distinct from 'وردي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 8'
+  and co.name_en is not distinct from 'Midnight Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 8'
+  and co.name_en is not distinct from 'Maple Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 8'
+  and co.name_en is not distinct from 'Orchid Gray'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 8'
+  and co.name_en is not distinct from 'Deepsea Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note 8'
+  and co.name_en is not distinct from 'Star Pink'
+  and co.name_ar is not distinct from 'وردي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note FE'
+  and co.name_en is not distinct from 'Onyx Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note FE'
+  and co.name_en is not distinct from 'Platinum Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note FE'
+  and co.name_en is not distinct from 'Titanium Gray'
+  and co.name_ar is not distinct from 'رمادي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy Note FE'
+  and co.name_en is not distinct from 'Coral Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A3 (2017)'
+  and co.name_en is not distinct from 'Black Sky'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A3 (2017)'
+  and co.name_en is not distinct from 'Gold Sand'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A3 (2017)'
+  and co.name_en is not distinct from 'Blue Mist'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A3 (2017)'
+  and co.name_en is not distinct from 'Peach Cloud'
+  and co.name_ar is not distinct from 'خوخي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A5 (2017)'
+  and co.name_en is not distinct from 'Black Sky'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A5 (2017)'
+  and co.name_en is not distinct from 'Gold Sand'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A5 (2017)'
+  and co.name_en is not distinct from 'Blue Mist'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A5 (2017)'
+  and co.name_en is not distinct from 'Peach Cloud'
+  and co.name_ar is not distinct from 'خوخي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A7 (2017)'
+  and co.name_en is not distinct from 'Black Sky'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A7 (2017)'
+  and co.name_en is not distinct from 'Gold Sand'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A7 (2017)'
+  and co.name_en is not distinct from 'Blue Mist'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy A7 (2017)'
+  and co.name_en is not distinct from 'Peach Cloud'
+  and co.name_ar is not distinct from 'خوخي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J3 (2017)'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J3 (2017)'
+  and co.name_en is not distinct from 'Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J3 (2017)'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J5 (2017)'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J5 (2017)'
+  and co.name_en is not distinct from 'Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J5 (2017)'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J5 (2017)'
+  and co.name_en is not distinct from 'Pink'
+  and co.name_ar is not distinct from 'وردي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J7 (2017)'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J7 (2017)'
+  and co.name_en is not distinct from 'Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J7 (2017)'
+  and co.name_en is not distinct from 'Blue'
+  and co.name_ar is not distinct from 'أزرق'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J7 (2017)'
+  and co.name_en is not distinct from 'Pink'
+  and co.name_ar is not distinct from 'وردي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J7 Pro'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J7 Pro'
+  and co.name_en is not distinct from 'Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J7 Prime'
+  and co.name_en is not distinct from 'Black'
+  and co.name_ar is not distinct from 'أسود'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J7 Prime'
+  and co.name_en is not distinct from 'Gold'
+  and co.name_ar is not distinct from 'ذهبي'
+on conflict do nothing;
+insert into public.model_colors (model_id, color_id)
+select mo.id, co.id
+from public.models mo join public.brands b on b.id = mo.brand_id,
+     public.colors co
+where b.name = 'Samsung' and mo.name = 'Galaxy J7 Prime'
+  and co.name_en is not distinct from 'Rose Gold'
+  and co.name_ar is not distinct from 'وردي ذهبي'
+on conflict do nothing;
 
--- الجودات
+-- الجودات (Apple)
 insert into public.qualities (name_ar) values ('اصلي') on conflict (name_ar) do nothing;
 insert into public.qualities (name_ar) values ('اصلي كامل') on conflict (name_ar) do nothing;
 insert into public.qualities (name_ar) values ('اصلي فاضي') on conflict (name_ar) do nothing;
@@ -3152,7 +7666,7 @@ insert into public.qualities (name_ar) values ('مجدد مغير باغه') on 
 insert into public.qualities (name_ar) values ('مجدد مغير باغه + تاتش') on conflict (name_ar) do nothing;
 insert into public.qualities (name_ar) values ('مجدد مغير باغه + تاتش + فلاته') on conflict (name_ar) do nothing;
 
--- فئات قطع الغيار
+-- فئات قطع الغيار (Apple)
 insert into public.part_categories (name_ar, name_en, is_color_dependent, has_quality, has_percentage, has_part_brand, sort_order, notes)
 values ('شاشة', 'screen', false, true, true, true, 1, 'خلع يُقاس بنسبة مئوية من القرب للشاشة الجديدة. OLED مثل GX و COPY مثل JK.')
 on conflict (name_ar) do update set
@@ -3434,7 +7948,7 @@ on conflict (name_ar) do update set
   sort_order = excluded.sort_order,
   notes = excluded.notes;
 
--- براندات القطع (GX/JK ...)
+-- براندات القطع (Apple)
 insert into public.part_brands (name, part_category_id, notes)
 select 'GX', pc.id, 'مثال على OLED'
 from public.part_categories pc where pc.name_ar = 'شاشة'
@@ -3444,7 +7958,7 @@ select 'JK', pc.id, 'مثال على COPY'
 from public.part_categories pc where pc.name_ar = 'شاشة'
 on conflict (name, part_category_id) do nothing;
 
--- الجودات المتاحة لكل فئة
+-- الجودات المتاحة لكل فئة (Apple)
 insert into public.part_category_qualities (part_category_id, quality_id)
 select pc.id, qu.id
 from public.part_categories pc, public.qualities qu
@@ -3556,7 +8070,7 @@ from public.part_categories pc, public.qualities qu
 where pc.name_ar = 'بطارية' and qu.name_ar = 'كوبي'
 on conflict do nothing;
 
--- الألوان المسموحة لفئات مرتبطة بلون ثابت (الباغة)
+-- الألوان المسموحة لفئات مرتبطة بلون ثابت (Apple)
 insert into public.part_category_allowed_colors (part_category_id, color_id)
 select pc.id, co.id
 from public.part_categories pc, public.colors co
@@ -3572,7 +8086,7 @@ where pc.name_ar = 'باغة'
   and co.name_ar is not distinct from 'أسود'
 on conflict do nothing;
 
--- توافق فئات القطع مع موديلات iPhone
+-- توافق فئات القطع مع الموديلات (Apple / smartphone)
 insert into public.part_compatibility (part_category_id, model_id)
 select pc.id, mo.id
 from public.part_categories pc,

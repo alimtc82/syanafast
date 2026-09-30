@@ -1,0 +1,66 @@
+{
+  "brand": "POCO",
+  "_note": "الموديلات الرئيسية 2020–2026 (هواتف)، بدون ألوان. قابلة للإضافة/التعديل.",
+  "devices": [
+    {
+      "device_type": "هاتف",
+      "device_type_en": "smartphone",
+      "models": [
+        { "name": "POCO F2 Pro", "colors": [] },
+        { "name": "POCO X2", "colors": [] },
+        { "name": "POCO X3", "colors": [] },
+        { "name": "POCO X3 NFC", "colors": [] },
+        { "name": "POCO M2", "colors": [] },
+        { "name": "POCO M2 Pro", "colors": [] },
+        { "name": "POCO C3", "colors": [] },
+
+        { "name": "POCO M3", "colors": [] },
+        { "name": "POCO X3 Pro", "colors": [] },
+        { "name": "POCO F3", "colors": [] },
+        { "name": "POCO F3 GT", "colors": [] },
+        { "name": "POCO X3 GT", "colors": [] },
+        { "name": "POCO M3 Pro", "colors": [] },
+        { "name": "POCO C31", "colors": [] },
+
+        { "name": "POCO M4 Pro", "colors": [] },
+        { "name": "POCO M4 Pro 5G", "colors": [] },
+        { "name": "POCO X4 Pro", "colors": [] },
+        { "name": "POCO X4 GT", "colors": [] },
+        { "name": "POCO F4", "colors": [] },
+        { "name": "POCO F4 GT", "colors": [] },
+        { "name": "POCO M4 5G", "colors": [] },
+        { "name": "POCO M5", "colors": [] },
+        { "name": "POCO M5s", "colors": [] },
+        { "name": "POCO C40", "colors": [] },
+
+        { "name": "POCO F5", "colors": [] },
+        { "name": "POCO F5 Pro", "colors": [] },
+        { "name": "POCO X5", "colors": [] },
+        { "name": "POCO X5 Pro", "colors": [] },
+        { "name": "POCO C50", "colors": [] },
+        { "name": "POCO C55", "colors": [] },
+        { "name": "POCO M6 Pro", "colors": [] },
+
+        { "name": "POCO F6", "colors": [] },
+        { "name": "POCO F6 Pro", "colors": [] },
+        { "name": "POCO X6", "colors": [] },
+        { "name": "POCO X6 Pro", "colors": [] },
+        { "name": "POCO X6 Neo", "colors": [] },
+        { "name": "POCO C65", "colors": [] },
+        { "name": "POCO C61", "colors": [] },
+        { "name": "POCO M6", "colors": [] },
+        { "name": "POCO M6 5G", "colors": [] },
+
+        { "name": "POCO F7", "colors": [] },
+        { "name": "POCO F7 Pro", "colors": [] },
+        { "name": "POCO F7 Ultra", "colors": [] },
+        { "name": "POCO X7", "colors": [] },
+        { "name": "POCO X7 Pro", "colors": [] },
+        { "name": "POCO M7 Pro", "colors": [] },
+        { "name": "POCO M7", "colors": [] },
+        { "name": "POCO C75", "colors": [] },
+        { "name": "POCO C71", "colors": [] }
+      ]
+    }
+  ]
+}

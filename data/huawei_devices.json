@@ -1,0 +1,77 @@
+{
+  "brand": "Huawei",
+  "_note": "الموديلات الرئيسية 2020–2026 (هواتف)، بدون ألوان. قابلة للإضافة/التعديل.",
+  "devices": [
+    {
+      "device_type": "هاتف",
+      "device_type_en": "smartphone",
+      "models": [
+        { "name": "Huawei P40", "colors": [] },
+        { "name": "Huawei P40 Pro", "colors": [] },
+        { "name": "Huawei P40 Pro+", "colors": [] },
+        { "name": "Huawei P40 Lite", "colors": [] },
+        { "name": "Huawei P40 Lite E", "colors": [] },
+        { "name": "Huawei Mate 40", "colors": [] },
+        { "name": "Huawei Mate 40 Pro", "colors": [] },
+        { "name": "Huawei Mate 40 Pro+", "colors": [] },
+        { "name": "Huawei Nova 7", "colors": [] },
+        { "name": "Huawei Nova 7i", "colors": [] },
+        { "name": "Huawei Nova 7 SE", "colors": [] },
+        { "name": "Huawei Y6p", "colors": [] },
+        { "name": "Huawei Y7p", "colors": [] },
+        { "name": "Huawei Y8p", "colors": [] },
+        { "name": "Huawei Y9a", "colors": [] },
+
+        { "name": "Huawei Nova 8", "colors": [] },
+        { "name": "Huawei Nova 8i", "colors": [] },
+        { "name": "Huawei Nova 8 Pro", "colors": [] },
+        { "name": "Huawei P50", "colors": [] },
+        { "name": "Huawei P50 Pro", "colors": [] },
+        { "name": "Huawei P50 Pocket", "colors": [] },
+        { "name": "Huawei Mate X2", "colors": [] },
+        { "name": "Huawei Nova 9", "colors": [] },
+        { "name": "Huawei Nova 9 SE", "colors": [] },
+
+        { "name": "Huawei Mate 50", "colors": [] },
+        { "name": "Huawei Mate 50 Pro", "colors": [] },
+        { "name": "Huawei Nova 10", "colors": [] },
+        { "name": "Huawei Nova 10 Pro", "colors": [] },
+        { "name": "Huawei Nova Y70", "colors": [] },
+        { "name": "Huawei Nova Y90", "colors": [] },
+
+        { "name": "Huawei P60", "colors": [] },
+        { "name": "Huawei P60 Pro", "colors": [] },
+        { "name": "Huawei Mate X3", "colors": [] },
+        { "name": "Huawei Nova 11", "colors": [] },
+        { "name": "Huawei Nova 11i", "colors": [] },
+        { "name": "Huawei Nova 11 Pro", "colors": [] },
+        { "name": "Huawei Mate 60", "colors": [] },
+        { "name": "Huawei Mate 60 Pro", "colors": [] },
+        { "name": "Huawei Mate 60 Pro+", "colors": [] },
+        { "name": "Huawei Nova Y61", "colors": [] },
+
+        { "name": "Huawei Nova 12", "colors": [] },
+        { "name": "Huawei Nova 12s", "colors": [] },
+        { "name": "Huawei Nova 12i", "colors": [] },
+        { "name": "Huawei Pura 70", "colors": [] },
+        { "name": "Huawei Pura 70 Pro", "colors": [] },
+        { "name": "Huawei Pura 70 Pro+", "colors": [] },
+        { "name": "Huawei Pura 70 Ultra", "colors": [] },
+        { "name": "Huawei Mate X5", "colors": [] },
+        { "name": "Huawei Nova Y72", "colors": [] },
+
+        { "name": "Huawei Mate 70", "colors": [] },
+        { "name": "Huawei Mate 70 Pro", "colors": [] },
+        { "name": "Huawei Mate 70 Pro+", "colors": [] },
+        { "name": "Huawei Mate X6", "colors": [] },
+        { "name": "Huawei Nova 13", "colors": [] },
+        { "name": "Huawei Nova 13 Pro", "colors": [] },
+
+        { "name": "Huawei Pura 80", "colors": [] },
+        { "name": "Huawei Pura 80 Pro", "colors": [] },
+        { "name": "Huawei Pura 80 Ultra", "colors": [] },
+        { "name": "Huawei Nova 14", "colors": [] }
+      ]
+    }
+  ]
+}

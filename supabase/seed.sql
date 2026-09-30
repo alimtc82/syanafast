@@ -7,11 +7,17 @@ begin;
 
 -- الماركات
 insert into public.brands (name) values ('Apple') on conflict (name) do nothing;
+insert into public.brands (name) values ('Honor') on conflict (name) do nothing;
+insert into public.brands (name) values ('Huawei') on conflict (name) do nothing;
 insert into public.brands (name) values ('Infinix') on conflict (name) do nothing;
+insert into public.brands (name) values ('itel') on conflict (name) do nothing;
+insert into public.brands (name) values ('Nokia') on conflict (name) do nothing;
 insert into public.brands (name) values ('OPPO') on conflict (name) do nothing;
+insert into public.brands (name) values ('POCO') on conflict (name) do nothing;
 insert into public.brands (name) values ('realme') on conflict (name) do nothing;
 insert into public.brands (name) values ('Redmi') on conflict (name) do nothing;
 insert into public.brands (name) values ('Samsung') on conflict (name) do nothing;
+insert into public.brands (name) values ('Tecno') on conflict (name) do nothing;
 insert into public.brands (name) values ('vivo') on conflict (name) do nothing;
 insert into public.brands (name) values ('Xiaomi') on conflict (name) do nothing;
 
@@ -707,4052 +713,5687 @@ from public.brands b, public.device_types dt
 where b.name = 'Apple' and dt.name_en = 'smartwatch'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 5', 98
+select b.id, dt.id, 'Honor 30', 98
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 5 Lite', 99
+select b.id, dt.id, 'Honor 30 Pro', 99
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Zero 5', 100
+select b.id, dt.id, 'Honor 30 Pro+', 100
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 4', 101
+select b.id, dt.id, 'Honor 30S', 101
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix S2', 102
+select b.id, dt.id, 'Honor 9X', 102
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 6', 103
+select b.id, dt.id, 'Honor 9A', 103
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 6 Pro', 104
+select b.id, dt.id, 'Honor 9C', 104
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot S3', 105
+select b.id, dt.id, 'Honor 9S', 105
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 5', 106
+select b.id, dt.id, 'Honor X10', 106
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 5 Stylus', 107
+select b.id, dt.id, 'Honor Play4', 107
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Zero 6', 108
+select b.id, dt.id, 'Honor 10X Lite', 108
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Smart 2', 109
+select b.id, dt.id, 'Honor 50', 109
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix S3X', 110
+select b.id, dt.id, 'Honor 50 Pro', 110
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 7', 111
+select b.id, dt.id, 'Honor 50 Lite', 111
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 7 Pro', 112
+select b.id, dt.id, 'Honor 50 SE', 112
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 8', 113
+select b.id, dt.id, 'Honor Magic3', 113
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix S4', 114
+select b.id, dt.id, 'Honor Magic3 Pro', 114
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix S5', 115
+select b.id, dt.id, 'Honor X7', 115
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 6', 116
+select b.id, dt.id, 'Honor X8', 116
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 7', 117
+select b.id, dt.id, 'Honor X9', 117
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Smart 3', 118
+select b.id, dt.id, 'Honor 60', 118
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Smart 3 Plus', 119
+select b.id, dt.id, 'Honor 60 Pro', 119
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 9', 120
+select b.id, dt.id, 'Honor 70', 120
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 9 Pro', 121
+select b.id, dt.id, 'Honor 70 Pro', 121
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 9 Play', 122
+select b.id, dt.id, 'Honor Magic4', 122
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 10', 123
+select b.id, dt.id, 'Honor Magic4 Pro', 123
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 10 Play', 124
+select b.id, dt.id, 'Honor Magic V', 124
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 10S', 125
+select b.id, dt.id, 'Honor X40', 125
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 10T', 126
+select b.id, dt.id, 'Honor X8 5G', 126
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 7 Lite', 127
+select b.id, dt.id, 'Honor 90', 127
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 8', 128
+select b.id, dt.id, 'Honor 90 Pro', 128
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 8i', 129
+select b.id, dt.id, 'Honor 90 Lite', 129
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Zero 8', 130
+select b.id, dt.id, 'Honor Magic5', 130
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Zero 8i', 131
+select b.id, dt.id, 'Honor Magic5 Pro', 131
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix S5 Pro', 132
+select b.id, dt.id, 'Honor Magic Vs', 132
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix S5 Lite', 133
+select b.id, dt.id, 'Honor X7a', 133
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Smart 4', 134
+select b.id, dt.id, 'Honor X8a', 134
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Smart 5', 135
+select b.id, dt.id, 'Honor X9a', 135
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 11', 136
+select b.id, dt.id, 'Honor X6', 136
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 11 Play', 137
+select b.id, dt.id, 'Honor X5', 137
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 11S', 138
+select b.id, dt.id, 'Honor 100', 138
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 10', 139
+select b.id, dt.id, 'Honor 100 Pro', 139
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 10 Pro', 140
+select b.id, dt.id, 'Honor Magic6', 140
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 11', 141
+select b.id, dt.id, 'Honor Magic6 Pro', 141
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 11 Pro', 142
+select b.id, dt.id, 'Honor Magic6 Lite', 142
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 11i', 143
+select b.id, dt.id, 'Honor Magic V2', 143
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Zero X', 144
+select b.id, dt.id, 'Honor 200', 144
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Zero X Pro', 145
+select b.id, dt.id, 'Honor 200 Pro', 145
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Zero X Neo', 146
+select b.id, dt.id, 'Honor 200 Lite', 146
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Smart 5 Pro', 147
+select b.id, dt.id, 'Honor X9b', 147
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Smart 6', 148
+select b.id, dt.id, 'Honor X8b', 148
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 12', 149
+select b.id, dt.id, 'Honor X7b', 149
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 12 Play', 150
+select b.id, dt.id, 'Honor X6a', 150
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 12 Pro', 151
+select b.id, dt.id, 'Honor Magic V3', 151
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 20', 152
+select b.id, dt.id, 'Honor Magic7', 152
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 20 Play', 153
+select b.id, dt.id, 'Honor Magic7 Pro', 153
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 20S', 154
+select b.id, dt.id, 'Honor Magic7 Lite', 154
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 20i', 155
+select b.id, dt.id, 'Honor 300', 155
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 12', 156
+select b.id, dt.id, 'Honor X9c', 156
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'Honor' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Honor X7c', 157
+from public.brands b, public.device_types dt
+where b.name = 'Honor' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Honor X6c', 158
+from public.brands b, public.device_types dt
+where b.name = 'Honor' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Honor 400', 159
+from public.brands b, public.device_types dt
+where b.name = 'Honor' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Honor 400 Pro', 160
+from public.brands b, public.device_types dt
+where b.name = 'Honor' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Honor 400 Lite', 161
+from public.brands b, public.device_types dt
+where b.name = 'Honor' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Honor Magic V Flip', 162
+from public.brands b, public.device_types dt
+where b.name = 'Honor' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Honor X60', 163
+from public.brands b, public.device_types dt
+where b.name = 'Honor' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei P40', 164
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei P40 Pro', 165
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei P40 Pro+', 166
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei P40 Lite', 167
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei P40 Lite E', 168
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Mate 40', 169
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Mate 40 Pro', 170
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Mate 40 Pro+', 171
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 7', 172
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 7i', 173
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 7 SE', 174
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Y6p', 175
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Y7p', 176
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Y8p', 177
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Y9a', 178
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 8', 179
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 8i', 180
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 8 Pro', 181
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei P50', 182
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei P50 Pro', 183
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei P50 Pocket', 184
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Mate X2', 185
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 9', 186
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 9 SE', 187
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Mate 50', 188
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Mate 50 Pro', 189
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 10', 190
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 10 Pro', 191
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova Y70', 192
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova Y90', 193
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei P60', 194
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei P60 Pro', 195
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Mate X3', 196
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 11', 197
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 11i', 198
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 11 Pro', 199
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Mate 60', 200
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Mate 60 Pro', 201
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Mate 60 Pro+', 202
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova Y61', 203
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 12', 204
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 12s', 205
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 12i', 206
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Pura 70', 207
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Pura 70 Pro', 208
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Pura 70 Pro+', 209
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Pura 70 Ultra', 210
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Mate X5', 211
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova Y72', 212
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Mate 70', 213
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Mate 70 Pro', 214
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Mate 70 Pro+', 215
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Mate X6', 216
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 13', 217
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 13 Pro', 218
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Pura 80', 219
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Pura 80 Pro', 220
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Pura 80 Ultra', 221
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Huawei Nova 14', 222
+from public.brands b, public.device_types dt
+where b.name = 'Huawei' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 12 Pro', 157
+select b.id, dt.id, 'Infinix Hot 5', 223
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 12i', 158
+select b.id, dt.id, 'Infinix Hot 5 Lite', 224
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 12 VIP', 159
+select b.id, dt.id, 'Infinix Zero 5', 225
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Zero 20', 160
+select b.id, dt.id, 'Infinix Note 4', 226
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Zero Ultra', 161
+select b.id, dt.id, 'Infinix S2', 227
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Smart 6 Plus', 162
+select b.id, dt.id, 'Infinix Hot 6', 228
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Smart 7', 163
+select b.id, dt.id, 'Infinix Hot 6 Pro', 229
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 30', 164
+select b.id, dt.id, 'Infinix Hot S3', 230
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 30 Play', 165
+select b.id, dt.id, 'Infinix Note 5', 231
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 30i', 166
+select b.id, dt.id, 'Infinix Note 5 Stylus', 232
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 30', 167
+select b.id, dt.id, 'Infinix Zero 6', 233
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 30 Pro', 168
+select b.id, dt.id, 'Infinix Smart 2', 234
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 30i', 169
+select b.id, dt.id, 'Infinix S3X', 235
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 30 VIP', 170
+select b.id, dt.id, 'Infinix Hot 7', 236
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Zero 30', 171
+select b.id, dt.id, 'Infinix Hot 7 Pro', 237
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Zero 30 5G', 172
+select b.id, dt.id, 'Infinix Hot 8', 238
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix GT 10 Pro', 173
+select b.id, dt.id, 'Infinix S4', 239
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Smart 7 HD', 174
+select b.id, dt.id, 'Infinix S5', 240
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Smart 8', 175
+select b.id, dt.id, 'Infinix Note 6', 241
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 40', 176
+select b.id, dt.id, 'Infinix Note 7', 242
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 40 Pro', 177
+select b.id, dt.id, 'Infinix Smart 3', 243
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 40i', 178
+select b.id, dt.id, 'Infinix Smart 3 Plus', 244
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 40', 179
+select b.id, dt.id, 'Infinix Hot 9', 245
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 40 Pro', 180
+select b.id, dt.id, 'Infinix Hot 9 Pro', 246
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 40 Pro+', 181
+select b.id, dt.id, 'Infinix Hot 9 Play', 247
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Zero 40', 182
+select b.id, dt.id, 'Infinix Hot 10', 248
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Zero 40 5G', 183
+select b.id, dt.id, 'Infinix Hot 10 Play', 249
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Zero Flip', 184
+select b.id, dt.id, 'Infinix Hot 10S', 250
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix GT 20 Pro', 185
+select b.id, dt.id, 'Infinix Hot 10T', 251
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Smart 8 Plus', 186
+select b.id, dt.id, 'Infinix Note 7 Lite', 252
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Smart 9', 187
+select b.id, dt.id, 'Infinix Note 8', 253
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 50', 188
+select b.id, dt.id, 'Infinix Note 8i', 254
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 50 Pro', 189
+select b.id, dt.id, 'Infinix Zero 8', 255
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 50i', 190
+select b.id, dt.id, 'Infinix Zero 8i', 256
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 50', 191
+select b.id, dt.id, 'Infinix S5 Pro', 257
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 50 Pro', 192
+select b.id, dt.id, 'Infinix S5 Lite', 258
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Note 50 Pro+', 193
+select b.id, dt.id, 'Infinix Smart 4', 259
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 60', 194
+select b.id, dt.id, 'Infinix Smart 5', 260
 from public.brands b, public.device_types dt
 where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 11', 261
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 11 Play', 262
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 11S', 263
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 10', 264
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 10 Pro', 265
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 11', 266
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 11 Pro', 267
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 11i', 268
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Zero X', 269
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Zero X Pro', 270
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Zero X Neo', 271
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Smart 5 Pro', 272
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Smart 6', 273
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 12', 274
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 12 Play', 275
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 12 Pro', 276
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 20', 277
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 20 Play', 278
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 20S', 279
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 20i', 280
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 12', 281
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 12 Pro', 282
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 12i', 283
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 12 VIP', 284
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Zero 20', 285
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Zero Ultra', 286
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Smart 6 Plus', 287
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Smart 7', 288
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 30', 289
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 30 Play', 290
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 30i', 291
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 30', 292
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 30 Pro', 293
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 30i', 294
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 30 VIP', 295
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Zero 30', 296
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Zero 30 5G', 297
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix GT 10 Pro', 298
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Smart 7 HD', 299
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Smart 8', 300
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 40', 301
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 40 Pro', 302
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 40i', 303
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 40', 304
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 40 Pro', 305
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 40 Pro+', 306
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Zero 40', 307
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Zero 40 5G', 308
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Zero Flip', 309
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix GT 20 Pro', 310
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Smart 8 Plus', 311
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Smart 9', 312
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 50', 313
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 50 Pro', 314
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 50i', 315
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 50', 316
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 50 Pro', 317
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Note 50 Pro+', 318
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 60', 319
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix Hot 60 Pro', 320
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Infinix GT 30 Pro', 321
+from public.brands b, public.device_types dt
+where b.name = 'Infinix' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel Vision 1', 322
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel Vision 1 Pro', 323
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A48', 324
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A37', 325
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A47', 326
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel S16', 327
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel S16 Pro', 328
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel P36', 329
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel P37', 330
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel P37 Pro', 331
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel Vision 2', 332
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel Vision 2S', 333
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A58', 334
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A17', 335
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A27', 336
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel S17', 337
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel P38', 338
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel P38 Pro', 339
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel Vision 3', 340
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel Vision 3 Plus', 341
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A49', 342
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A58 Pro', 343
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel S18', 344
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel P40', 345
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A60', 346
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A60s', 347
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A05s', 348
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel P55', 349
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel P55 5G', 350
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel P55+', 351
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel S23', 352
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel S23+', 353
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel RS4', 354
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A70', 355
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A80', 356
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A18', 357
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel P65', 358
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel S24', 359
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel City 100', 360
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A90', 361
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel P55T', 362
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel A95 5G', 363
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'itel Super 30', 364
+from public.brands b, public.device_types dt
+where b.name = 'itel' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia 1.3', 365
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia 2.3', 366
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia 5.3', 367
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia 8.3 5G', 368
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C1', 369
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C2', 370
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C3', 371
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C5 Endi', 372
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia 8 V 5G', 373
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia 1.4', 374
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia 2.4', 375
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia 3.4', 376
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia 5.4', 377
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C10', 378
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C20', 379
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C30', 380
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia G10', 381
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia G20', 382
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia G50', 383
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia X10', 384
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia X20', 385
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C01 Plus', 386
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia G11', 387
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia G21', 388
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia G60 5G', 389
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia X30 5G', 390
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C21', 391
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C21 Plus', 392
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C31', 393
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C2 (2nd Edition)', 394
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia G11 Plus', 395
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia G22', 396
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia G42 5G', 397
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia G310', 398
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C12', 399
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C22', 400
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C32', 401
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C110', 402
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C210', 403
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia C300', 404
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia X100', 405
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Nokia G100', 406
+from public.brands b, public.device_types dt
+where b.name = 'Nokia' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO R9s', 407
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO R9s Plus', 408
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO R11', 409
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO R11 Plus', 410
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO R11s', 411
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A57 (2017)', 412
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A71', 413
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A77', 414
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A83', 415
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO F3', 416
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO F3 Plus', 417
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO F5', 418
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO F5 Youth', 419
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO Find X', 420
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO R15', 421
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO R15 Pro', 422
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO R17', 423
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO R17 Pro', 424
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO F7', 425
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO F9', 426
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A3s', 427
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A5', 428
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A7', 429
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A73 (2018)', 430
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO Reno', 431
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO Reno 10x Zoom', 432
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO Reno Z', 433
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO Reno 2', 434
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO Reno 2Z', 435
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO Reno 2F', 436
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO F11', 437
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO F11 Pro', 438
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A5s', 439
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A7x', 440
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A9', 441
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A9 2020', 442
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A5 2020', 443
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A1k', 444
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A31', 445
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO A91', 446
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO K1', 447
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO Find X2', 448
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO Find X2 Pro', 449
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO Find X2 Lite', 450
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO Find X2 Neo', 451
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO Reno 3', 452
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'OPPO Reno 3 Pro', 453
+from public.brands b, public.device_types dt
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix Hot 60 Pro', 195
+select b.id, dt.id, 'OPPO Reno 4', 454
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Infinix GT 30 Pro', 196
+select b.id, dt.id, 'OPPO Reno 4 Pro', 455
 from public.brands b, public.device_types dt
-where b.name = 'Infinix' and dt.name_en = 'smartphone'
+where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO R9s', 197
+select b.id, dt.id, 'OPPO Reno 4Z', 456
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO R9s Plus', 198
+select b.id, dt.id, 'OPPO A52', 457
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO R11', 199
+select b.id, dt.id, 'OPPO A72', 458
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO R11 Plus', 200
+select b.id, dt.id, 'OPPO A92', 459
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO R11s', 201
+select b.id, dt.id, 'OPPO A12', 460
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A57 (2017)', 202
+select b.id, dt.id, 'OPPO A15', 461
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A71', 203
+select b.id, dt.id, 'OPPO A15s', 462
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A77', 204
+select b.id, dt.id, 'OPPO A53', 463
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A83', 205
+select b.id, dt.id, 'OPPO A53s', 464
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F3', 206
+select b.id, dt.id, 'OPPO A33', 465
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F3 Plus', 207
+select b.id, dt.id, 'OPPO A32', 466
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F5', 208
+select b.id, dt.id, 'OPPO A93', 467
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F5 Youth', 209
+select b.id, dt.id, 'OPPO F15', 468
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X', 210
+select b.id, dt.id, 'OPPO F17', 469
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO R15', 211
+select b.id, dt.id, 'OPPO F17 Pro', 470
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO R15 Pro', 212
+select b.id, dt.id, 'OPPO Find X3', 471
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO R17', 213
+select b.id, dt.id, 'OPPO Find X3 Pro', 472
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO R17 Pro', 214
+select b.id, dt.id, 'OPPO Find X3 Lite', 473
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F7', 215
+select b.id, dt.id, 'OPPO Find X3 Neo', 474
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F9', 216
+select b.id, dt.id, 'OPPO Find N', 475
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A3s', 217
+select b.id, dt.id, 'OPPO Reno 5', 476
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A5', 218
+select b.id, dt.id, 'OPPO Reno 5 Pro', 477
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A7', 219
+select b.id, dt.id, 'OPPO Reno 5Z', 478
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A73 (2018)', 220
+select b.id, dt.id, 'OPPO Reno 5 Lite', 479
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno', 221
+select b.id, dt.id, 'OPPO Reno 6', 480
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 10x Zoom', 222
+select b.id, dt.id, 'OPPO Reno 6 Pro', 481
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno Z', 223
+select b.id, dt.id, 'OPPO Reno 6Z', 482
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 2', 224
+select b.id, dt.id, 'OPPO A54', 483
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 2Z', 225
+select b.id, dt.id, 'OPPO A74', 484
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 2F', 226
+select b.id, dt.id, 'OPPO A94', 485
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F11', 227
+select b.id, dt.id, 'OPPO A54 5G', 486
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F11 Pro', 228
+select b.id, dt.id, 'OPPO A74 5G', 487
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A5s', 229
+select b.id, dt.id, 'OPPO A93 5G', 488
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A7x', 230
+select b.id, dt.id, 'OPPO A16', 489
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A9', 231
+select b.id, dt.id, 'OPPO A16s', 490
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A9 2020', 232
+select b.id, dt.id, 'OPPO A16k', 491
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A5 2020', 233
+select b.id, dt.id, 'OPPO A55', 492
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A1k', 234
+select b.id, dt.id, 'OPPO A95', 493
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A31', 235
+select b.id, dt.id, 'OPPO A35', 494
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A91', 236
+select b.id, dt.id, 'OPPO F19', 495
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO K1', 237
+select b.id, dt.id, 'OPPO F19 Pro', 496
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X2', 238
+select b.id, dt.id, 'OPPO F19 Pro+', 497
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X2 Pro', 239
+select b.id, dt.id, 'OPPO Find X5', 498
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X2 Lite', 240
+select b.id, dt.id, 'OPPO Find X5 Pro', 499
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X2 Neo', 241
+select b.id, dt.id, 'OPPO Find X5 Lite', 500
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 3', 242
+select b.id, dt.id, 'OPPO Find N2', 501
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 3 Pro', 243
+select b.id, dt.id, 'OPPO Find N2 Flip', 502
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 4', 244
+select b.id, dt.id, 'OPPO Reno 7', 503
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 4 Pro', 245
+select b.id, dt.id, 'OPPO Reno 7 Pro', 504
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 4Z', 246
+select b.id, dt.id, 'OPPO Reno 7Z', 505
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A52', 247
+select b.id, dt.id, 'OPPO Reno 8', 506
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A72', 248
+select b.id, dt.id, 'OPPO Reno 8 Pro', 507
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A92', 249
+select b.id, dt.id, 'OPPO Reno 8Z', 508
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A12', 250
+select b.id, dt.id, 'OPPO A16e', 509
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A15', 251
+select b.id, dt.id, 'OPPO A57 (2022)', 510
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A15s', 252
+select b.id, dt.id, 'OPPO A57s', 511
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A53', 253
+select b.id, dt.id, 'OPPO A76', 512
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A53s', 254
+select b.id, dt.id, 'OPPO A96', 513
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A33', 255
+select b.id, dt.id, 'OPPO A77 (2022)', 514
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A32', 256
+select b.id, dt.id, 'OPPO A77s', 515
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A93', 257
+select b.id, dt.id, 'OPPO A17', 516
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F15', 258
+select b.id, dt.id, 'OPPO A17k', 517
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F17', 259
+select b.id, dt.id, 'OPPO A36', 518
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F17 Pro', 260
+select b.id, dt.id, 'OPPO A54s', 519
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X3', 261
+select b.id, dt.id, 'OPPO F21 Pro', 520
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X3 Pro', 262
+select b.id, dt.id, 'OPPO F21s Pro', 521
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X3 Lite', 263
+select b.id, dt.id, 'OPPO K10', 522
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X3 Neo', 264
+select b.id, dt.id, 'OPPO Find X6', 523
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find N', 265
+select b.id, dt.id, 'OPPO Find X6 Pro', 524
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 5', 266
+select b.id, dt.id, 'OPPO Find N3', 525
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 5 Pro', 267
+select b.id, dt.id, 'OPPO Find N3 Flip', 526
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 5Z', 268
+select b.id, dt.id, 'OPPO Reno 8T', 527
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 5 Lite', 269
+select b.id, dt.id, 'OPPO Reno 9', 528
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 6', 270
+select b.id, dt.id, 'OPPO Reno 10', 529
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 6 Pro', 271
+select b.id, dt.id, 'OPPO Reno 10 Pro', 530
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 6Z', 272
+select b.id, dt.id, 'OPPO Reno 10 Pro+', 531
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A54', 273
+select b.id, dt.id, 'OPPO A18', 532
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A74', 274
+select b.id, dt.id, 'OPPO A38', 533
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A94', 275
+select b.id, dt.id, 'OPPO A58', 534
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A54 5G', 276
+select b.id, dt.id, 'OPPO A78', 535
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A74 5G', 277
+select b.id, dt.id, 'OPPO A98', 536
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A93 5G', 278
+select b.id, dt.id, 'OPPO A1 Pro', 537
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A16', 279
+select b.id, dt.id, 'OPPO A79', 538
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A16s', 280
+select b.id, dt.id, 'OPPO F23', 539
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A16k', 281
+select b.id, dt.id, 'OPPO K11', 540
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A55', 282
+select b.id, dt.id, 'OPPO Find X7', 541
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A95', 283
+select b.id, dt.id, 'OPPO Find X7 Ultra', 542
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A35', 284
+select b.id, dt.id, 'OPPO Find X8', 543
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F19', 285
+select b.id, dt.id, 'OPPO Find X8 Pro', 544
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F19 Pro', 286
+select b.id, dt.id, 'OPPO Reno 11', 545
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F19 Pro+', 287
+select b.id, dt.id, 'OPPO Reno 11 Pro', 546
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X5', 288
+select b.id, dt.id, 'OPPO Reno 11F', 547
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X5 Pro', 289
+select b.id, dt.id, 'OPPO Reno 12', 548
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X5 Lite', 290
+select b.id, dt.id, 'OPPO Reno 12 Pro', 549
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find N2', 291
+select b.id, dt.id, 'OPPO Reno 12F', 550
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find N2 Flip', 292
+select b.id, dt.id, 'OPPO A3 Pro', 551
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 7', 293
+select b.id, dt.id, 'OPPO A3x', 552
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 7 Pro', 294
+select b.id, dt.id, 'OPPO A60', 553
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 7Z', 295
+select b.id, dt.id, 'OPPO A79 5G', 554
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 8', 296
+select b.id, dt.id, 'OPPO A80', 555
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 8 Pro', 297
+select b.id, dt.id, 'OPPO K12', 556
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 8Z', 298
+select b.id, dt.id, 'OPPO F25 Pro', 557
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A16e', 299
+select b.id, dt.id, 'OPPO F27', 558
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A57 (2022)', 300
+select b.id, dt.id, 'OPPO F27 Pro+', 559
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A57s', 301
+select b.id, dt.id, 'OPPO Find X8 Ultra', 560
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A76', 302
+select b.id, dt.id, 'OPPO Find N5', 561
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A96', 303
+select b.id, dt.id, 'OPPO Reno 13', 562
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A77 (2022)', 304
+select b.id, dt.id, 'OPPO Reno 13 Pro', 563
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A77s', 305
+select b.id, dt.id, 'OPPO Reno 13F', 564
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A17', 306
+select b.id, dt.id, 'OPPO Reno 14', 565
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A17k', 307
+select b.id, dt.id, 'OPPO Reno 14 Pro', 566
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A36', 308
+select b.id, dt.id, 'OPPO A5 Pro', 567
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A54s', 309
+select b.id, dt.id, 'OPPO A5 (2025)', 568
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F21 Pro', 310
+select b.id, dt.id, 'OPPO A80 5G', 569
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F21s Pro', 311
+select b.id, dt.id, 'OPPO K13', 570
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO K10', 312
+select b.id, dt.id, 'OPPO F29', 571
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X6', 313
+select b.id, dt.id, 'OPPO F29 Pro', 572
 from public.brands b, public.device_types dt
 where b.name = 'OPPO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X6 Pro', 314
+select b.id, dt.id, 'POCO F2 Pro', 573
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find N3', 315
+select b.id, dt.id, 'POCO X2', 574
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find N3 Flip', 316
+select b.id, dt.id, 'POCO X3', 575
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 8T', 317
+select b.id, dt.id, 'POCO X3 NFC', 576
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 9', 318
+select b.id, dt.id, 'POCO M2', 577
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 10', 319
+select b.id, dt.id, 'POCO M2 Pro', 578
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 10 Pro', 320
+select b.id, dt.id, 'POCO C3', 579
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 10 Pro+', 321
+select b.id, dt.id, 'POCO M3', 580
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A18', 322
+select b.id, dt.id, 'POCO X3 Pro', 581
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A38', 323
+select b.id, dt.id, 'POCO F3', 582
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A58', 324
+select b.id, dt.id, 'POCO F3 GT', 583
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A78', 325
+select b.id, dt.id, 'POCO X3 GT', 584
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A98', 326
+select b.id, dt.id, 'POCO M3 Pro', 585
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A1 Pro', 327
+select b.id, dt.id, 'POCO C31', 586
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A79', 328
+select b.id, dt.id, 'POCO M4 Pro', 587
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F23', 329
+select b.id, dt.id, 'POCO M4 Pro 5G', 588
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO K11', 330
+select b.id, dt.id, 'POCO X4 Pro', 589
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X7', 331
+select b.id, dt.id, 'POCO X4 GT', 590
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X7 Ultra', 332
+select b.id, dt.id, 'POCO F4', 591
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X8', 333
+select b.id, dt.id, 'POCO F4 GT', 592
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X8 Pro', 334
+select b.id, dt.id, 'POCO M4 5G', 593
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 11', 335
+select b.id, dt.id, 'POCO M5', 594
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 11 Pro', 336
+select b.id, dt.id, 'POCO M5s', 595
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 11F', 337
+select b.id, dt.id, 'POCO C40', 596
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 12', 338
+select b.id, dt.id, 'POCO F5', 597
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 12 Pro', 339
+select b.id, dt.id, 'POCO F5 Pro', 598
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 12F', 340
+select b.id, dt.id, 'POCO X5', 599
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A3 Pro', 341
+select b.id, dt.id, 'POCO X5 Pro', 600
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A3x', 342
+select b.id, dt.id, 'POCO C50', 601
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A60', 343
+select b.id, dt.id, 'POCO C55', 602
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A79 5G', 344
+select b.id, dt.id, 'POCO M6 Pro', 603
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A80', 345
+select b.id, dt.id, 'POCO F6', 604
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO K12', 346
+select b.id, dt.id, 'POCO F6 Pro', 605
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F25 Pro', 347
+select b.id, dt.id, 'POCO X6', 606
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F27', 348
+select b.id, dt.id, 'POCO X6 Pro', 607
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F27 Pro+', 349
+select b.id, dt.id, 'POCO X6 Neo', 608
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find X8 Ultra', 350
+select b.id, dt.id, 'POCO C65', 609
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Find N5', 351
+select b.id, dt.id, 'POCO C61', 610
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 13', 352
+select b.id, dt.id, 'POCO M6', 611
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 13 Pro', 353
+select b.id, dt.id, 'POCO M6 5G', 612
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 13F', 354
+select b.id, dt.id, 'POCO F7', 613
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 14', 355
+select b.id, dt.id, 'POCO F7 Pro', 614
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO Reno 14 Pro', 356
+select b.id, dt.id, 'POCO F7 Ultra', 615
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A5 Pro', 357
+select b.id, dt.id, 'POCO X7', 616
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A5 (2025)', 358
+select b.id, dt.id, 'POCO X7 Pro', 617
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO A80 5G', 359
+select b.id, dt.id, 'POCO M7 Pro', 618
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO K13', 360
+select b.id, dt.id, 'POCO M7', 619
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F29', 361
+select b.id, dt.id, 'POCO C75', 620
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'OPPO F29 Pro', 362
+select b.id, dt.id, 'POCO C71', 621
 from public.brands b, public.device_types dt
-where b.name = 'OPPO' and dt.name_en = 'smartphone'
+where b.name = 'POCO' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 1', 363
+select b.id, dt.id, 'realme 1', 622
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 2', 364
+select b.id, dt.id, 'realme 2', 623
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 2 Pro', 365
+select b.id, dt.id, 'realme 2 Pro', 624
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C1', 366
+select b.id, dt.id, 'realme C1', 625
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme U1', 367
+select b.id, dt.id, 'realme U1', 626
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 3', 368
+select b.id, dt.id, 'realme 3', 627
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 3 Pro', 369
+select b.id, dt.id, 'realme 3 Pro', 628
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 3i', 370
+select b.id, dt.id, 'realme 3i', 629
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 5', 371
+select b.id, dt.id, 'realme 5', 630
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 5 Pro', 372
+select b.id, dt.id, 'realme 5 Pro', 631
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 5i', 373
+select b.id, dt.id, 'realme 5i', 632
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 5s', 374
+select b.id, dt.id, 'realme 5s', 633
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme X', 375
+select b.id, dt.id, 'realme X', 634
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme XT', 376
+select b.id, dt.id, 'realme XT', 635
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme X2', 377
+select b.id, dt.id, 'realme X2', 636
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme X2 Pro', 378
+select b.id, dt.id, 'realme X2 Pro', 637
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C2', 379
+select b.id, dt.id, 'realme C2', 638
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 6', 380
+select b.id, dt.id, 'realme 6', 639
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 6 Pro', 381
+select b.id, dt.id, 'realme 6 Pro', 640
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 6i', 382
+select b.id, dt.id, 'realme 6i', 641
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 6s', 383
+select b.id, dt.id, 'realme 6s', 642
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 7', 384
+select b.id, dt.id, 'realme 7', 643
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 7 Pro', 385
+select b.id, dt.id, 'realme 7 Pro', 644
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 7i', 386
+select b.id, dt.id, 'realme 7i', 645
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme X3', 387
+select b.id, dt.id, 'realme X3', 646
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme X3 SuperZoom', 388
+select b.id, dt.id, 'realme X3 SuperZoom', 647
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme X50 Pro', 389
+select b.id, dt.id, 'realme X50 Pro', 648
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C3', 390
+select b.id, dt.id, 'realme C3', 649
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C11', 391
+select b.id, dt.id, 'realme C11', 650
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C12', 392
+select b.id, dt.id, 'realme C12', 651
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C15', 393
+select b.id, dt.id, 'realme C15', 652
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C17', 394
+select b.id, dt.id, 'realme C17', 653
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 10', 395
+select b.id, dt.id, 'realme Narzo 10', 654
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 10A', 396
+select b.id, dt.id, 'realme Narzo 10A', 655
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 20', 397
+select b.id, dt.id, 'realme Narzo 20', 656
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 20A', 398
+select b.id, dt.id, 'realme Narzo 20A', 657
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 20 Pro', 399
+select b.id, dt.id, 'realme Narzo 20 Pro', 658
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 8', 400
+select b.id, dt.id, 'realme 8', 659
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 8 Pro', 401
+select b.id, dt.id, 'realme 8 Pro', 660
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 8i', 402
+select b.id, dt.id, 'realme 8i', 661
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 8s', 403
+select b.id, dt.id, 'realme 8s', 662
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 8 5G', 404
+select b.id, dt.id, 'realme 8 5G', 663
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 9', 405
+select b.id, dt.id, 'realme 9', 664
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 9 Pro', 406
+select b.id, dt.id, 'realme 9 Pro', 665
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 9 Pro+', 407
+select b.id, dt.id, 'realme 9 Pro+', 666
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 9i', 408
+select b.id, dt.id, 'realme 9i', 667
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 9 5G', 409
+select b.id, dt.id, 'realme 9 5G', 668
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme GT', 410
+select b.id, dt.id, 'realme GT', 669
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme GT Neo', 411
+select b.id, dt.id, 'realme GT Neo', 670
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme GT Neo 2', 412
+select b.id, dt.id, 'realme GT Neo 2', 671
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme GT Master Edition', 413
+select b.id, dt.id, 'realme GT Master Edition', 672
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme GT 2', 414
+select b.id, dt.id, 'realme GT 2', 673
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme GT 2 Pro', 415
+select b.id, dt.id, 'realme GT 2 Pro', 674
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C20', 416
+select b.id, dt.id, 'realme C20', 675
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C21', 417
+select b.id, dt.id, 'realme C21', 676
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C21Y', 418
+select b.id, dt.id, 'realme C21Y', 677
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C25', 419
+select b.id, dt.id, 'realme C25', 678
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C25s', 420
+select b.id, dt.id, 'realme C25s', 679
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C25Y', 421
+select b.id, dt.id, 'realme C25Y', 680
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C11 (2021)', 422
+select b.id, dt.id, 'realme C11 (2021)', 681
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C30', 423
+select b.id, dt.id, 'realme C30', 682
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C31', 424
+select b.id, dt.id, 'realme C31', 683
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C33', 425
+select b.id, dt.id, 'realme C33', 684
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C35', 426
+select b.id, dt.id, 'realme C35', 685
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 30', 427
+select b.id, dt.id, 'realme Narzo 30', 686
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 30A', 428
+select b.id, dt.id, 'realme Narzo 30A', 687
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 30 Pro', 429
+select b.id, dt.id, 'realme Narzo 30 Pro', 688
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 50', 430
+select b.id, dt.id, 'realme Narzo 50', 689
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 50A', 431
+select b.id, dt.id, 'realme Narzo 50A', 690
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 50i', 432
+select b.id, dt.id, 'realme Narzo 50i', 691
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 10', 433
+select b.id, dt.id, 'realme 10', 692
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 10 Pro', 434
+select b.id, dt.id, 'realme 10 Pro', 693
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 10 Pro+', 435
+select b.id, dt.id, 'realme 10 Pro+', 694
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 10s', 436
+select b.id, dt.id, 'realme 10s', 695
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 11', 437
+select b.id, dt.id, 'realme 11', 696
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 11 Pro', 438
+select b.id, dt.id, 'realme 11 Pro', 697
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 11 Pro+', 439
+select b.id, dt.id, 'realme 11 Pro+', 698
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 11x', 440
+select b.id, dt.id, 'realme 11x', 699
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme GT Neo 3', 441
+select b.id, dt.id, 'realme GT Neo 3', 700
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme GT Neo 3T', 442
+select b.id, dt.id, 'realme GT Neo 3T', 701
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme GT 3', 443
+select b.id, dt.id, 'realme GT 3', 702
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme GT 5', 444
+select b.id, dt.id, 'realme GT 5', 703
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C30s', 445
+select b.id, dt.id, 'realme C30s', 704
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C33 (2023)', 446
+select b.id, dt.id, 'realme C33 (2023)', 705
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C51', 447
+select b.id, dt.id, 'realme C51', 706
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C53', 448
+select b.id, dt.id, 'realme C53', 707
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C55', 449
+select b.id, dt.id, 'realme C55', 708
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo N53', 450
+select b.id, dt.id, 'realme Narzo N53', 709
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo N55', 451
+select b.id, dt.id, 'realme Narzo N55', 710
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 60', 452
+select b.id, dt.id, 'realme Narzo 60', 711
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 60 Pro', 453
+select b.id, dt.id, 'realme Narzo 60 Pro', 712
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 12', 454
+select b.id, dt.id, 'realme 12', 713
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 12 Pro', 455
+select b.id, dt.id, 'realme 12 Pro', 714
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 12 Pro+', 456
+select b.id, dt.id, 'realme 12 Pro+', 715
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 12+', 457
+select b.id, dt.id, 'realme 12+', 716
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 12x', 458
+select b.id, dt.id, 'realme 12x', 717
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 13', 459
+select b.id, dt.id, 'realme 13', 718
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 13 Pro', 460
+select b.id, dt.id, 'realme 13 Pro', 719
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 13 Pro+', 461
+select b.id, dt.id, 'realme 13 Pro+', 720
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 13+', 462
+select b.id, dt.id, 'realme 13+', 721
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme GT 5 Pro', 463
+select b.id, dt.id, 'realme GT 5 Pro', 722
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme GT 6', 464
+select b.id, dt.id, 'realme GT 6', 723
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme GT 6T', 465
+select b.id, dt.id, 'realme GT 6T', 724
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C61', 466
+select b.id, dt.id, 'realme C61', 725
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C63', 467
+select b.id, dt.id, 'realme C63', 726
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C65', 468
+select b.id, dt.id, 'realme C65', 727
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C67', 469
+select b.id, dt.id, 'realme C67', 728
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C75', 470
+select b.id, dt.id, 'realme C75', 729
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo N61', 471
+select b.id, dt.id, 'realme Narzo N61', 730
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo N65', 472
+select b.id, dt.id, 'realme Narzo N65', 731
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 70', 473
+select b.id, dt.id, 'realme Narzo 70', 732
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 70 Pro', 474
+select b.id, dt.id, 'realme Narzo 70 Pro', 733
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 70x', 475
+select b.id, dt.id, 'realme Narzo 70x', 734
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 14', 476
+select b.id, dt.id, 'realme 14', 735
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 14 Pro', 477
+select b.id, dt.id, 'realme 14 Pro', 736
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme 14 Pro+', 478
+select b.id, dt.id, 'realme 14 Pro+', 737
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme GT 7', 479
+select b.id, dt.id, 'realme GT 7', 738
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme GT 7 Pro', 480
+select b.id, dt.id, 'realme GT 7 Pro', 739
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme C71', 481
+select b.id, dt.id, 'realme C71', 740
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'realme Narzo 80 Pro', 482
+select b.id, dt.id, 'realme Narzo 80 Pro', 741
 from public.brands b, public.device_types dt
 where b.name = 'realme' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 5', 483
+select b.id, dt.id, 'Redmi Note 5', 742
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 5 Pro', 484
+select b.id, dt.id, 'Redmi Note 5 Pro', 743
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 5A', 485
+select b.id, dt.id, 'Redmi Note 5A', 744
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 5', 486
+select b.id, dt.id, 'Redmi 5', 745
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 5A', 487
+select b.id, dt.id, 'Redmi 5A', 746
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 5 Plus', 488
+select b.id, dt.id, 'Redmi 5 Plus', 747
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Y1', 489
+select b.id, dt.id, 'Redmi Y1', 748
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 6 Pro', 490
+select b.id, dt.id, 'Redmi Note 6 Pro', 749
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 6', 491
+select b.id, dt.id, 'Redmi 6', 750
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 6A', 492
+select b.id, dt.id, 'Redmi 6A', 751
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 6 Pro', 493
+select b.id, dt.id, 'Redmi 6 Pro', 752
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi S2', 494
+select b.id, dt.id, 'Redmi S2', 753
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Y2', 495
+select b.id, dt.id, 'Redmi Y2', 754
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Go', 496
+select b.id, dt.id, 'Redmi Go', 755
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 7', 497
+select b.id, dt.id, 'Redmi Note 7', 756
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 7 Pro', 498
+select b.id, dt.id, 'Redmi Note 7 Pro', 757
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 7S', 499
+select b.id, dt.id, 'Redmi Note 7S', 758
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 8', 500
+select b.id, dt.id, 'Redmi Note 8', 759
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 8 Pro', 501
+select b.id, dt.id, 'Redmi Note 8 Pro', 760
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 8T', 502
+select b.id, dt.id, 'Redmi Note 8T', 761
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 7', 503
+select b.id, dt.id, 'Redmi 7', 762
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 7A', 504
+select b.id, dt.id, 'Redmi 7A', 763
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 8', 505
+select b.id, dt.id, 'Redmi 8', 764
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 8A', 506
+select b.id, dt.id, 'Redmi 8A', 765
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Y3', 507
+select b.id, dt.id, 'Redmi Y3', 766
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi K20', 508
+select b.id, dt.id, 'Redmi K20', 767
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi K20 Pro', 509
+select b.id, dt.id, 'Redmi K20 Pro', 768
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 9', 510
+select b.id, dt.id, 'Redmi Note 9', 769
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 9 Pro', 511
+select b.id, dt.id, 'Redmi Note 9 Pro', 770
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 9 Pro Max', 512
+select b.id, dt.id, 'Redmi Note 9 Pro Max', 771
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 9S', 513
+select b.id, dt.id, 'Redmi Note 9S', 772
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 9T', 514
+select b.id, dt.id, 'Redmi Note 9T', 773
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 9', 515
+select b.id, dt.id, 'Redmi 9', 774
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 9A', 516
+select b.id, dt.id, 'Redmi 9A', 775
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 9C', 517
+select b.id, dt.id, 'Redmi 9C', 776
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 9T', 518
+select b.id, dt.id, 'Redmi 9T', 777
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 9 Power', 519
+select b.id, dt.id, 'Redmi 9 Power', 778
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 9i', 520
+select b.id, dt.id, 'Redmi 9i', 779
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi K30', 521
+select b.id, dt.id, 'Redmi K30', 780
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi K30 Pro', 522
+select b.id, dt.id, 'Redmi K30 Pro', 781
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 10', 523
+select b.id, dt.id, 'Redmi Note 10', 782
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 10 Pro', 524
+select b.id, dt.id, 'Redmi Note 10 Pro', 783
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 10 Pro Max', 525
+select b.id, dt.id, 'Redmi Note 10 Pro Max', 784
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 10S', 526
+select b.id, dt.id, 'Redmi Note 10S', 785
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 10 5G', 527
+select b.id, dt.id, 'Redmi Note 10 5G', 786
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 10T', 528
+select b.id, dt.id, 'Redmi Note 10T', 787
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 8 (2021)', 529
+select b.id, dt.id, 'Redmi Note 8 (2021)', 788
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 10', 530
+select b.id, dt.id, 'Redmi 10', 789
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 10A', 531
+select b.id, dt.id, 'Redmi 10A', 790
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 10C', 532
+select b.id, dt.id, 'Redmi 10C', 791
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 10 Power', 533
+select b.id, dt.id, 'Redmi 10 Power', 792
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi K40', 534
+select b.id, dt.id, 'Redmi K40', 793
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi K40 Pro', 535
+select b.id, dt.id, 'Redmi K40 Pro', 794
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 11', 536
+select b.id, dt.id, 'Redmi Note 11', 795
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 11 Pro', 537
+select b.id, dt.id, 'Redmi Note 11 Pro', 796
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 11 Pro+', 538
+select b.id, dt.id, 'Redmi Note 11 Pro+', 797
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 11S', 539
+select b.id, dt.id, 'Redmi Note 11S', 798
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 11E', 540
+select b.id, dt.id, 'Redmi Note 11E', 799
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 11T', 541
+select b.id, dt.id, 'Redmi Note 11T', 800
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi A1', 542
+select b.id, dt.id, 'Redmi A1', 801
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi A1+', 543
+select b.id, dt.id, 'Redmi A1+', 802
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 10 (2022)', 544
+select b.id, dt.id, 'Redmi 10 (2022)', 803
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi K50', 545
+select b.id, dt.id, 'Redmi K50', 804
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi K50 Pro', 546
+select b.id, dt.id, 'Redmi K50 Pro', 805
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 12', 547
+select b.id, dt.id, 'Redmi Note 12', 806
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 12 Pro', 548
+select b.id, dt.id, 'Redmi Note 12 Pro', 807
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 12 Pro+', 549
+select b.id, dt.id, 'Redmi Note 12 Pro+', 808
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 12S', 550
+select b.id, dt.id, 'Redmi Note 12S', 809
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 12 Turbo', 551
+select b.id, dt.id, 'Redmi Note 12 Turbo', 810
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi A2', 552
+select b.id, dt.id, 'Redmi A2', 811
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi A2+', 553
+select b.id, dt.id, 'Redmi A2+', 812
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 12', 554
+select b.id, dt.id, 'Redmi 12', 813
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 12C', 555
+select b.id, dt.id, 'Redmi 12C', 814
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 12 5G', 556
+select b.id, dt.id, 'Redmi 12 5G', 815
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi K60', 557
+select b.id, dt.id, 'Redmi K60', 816
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi K60 Pro', 558
+select b.id, dt.id, 'Redmi K60 Pro', 817
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 13', 559
+select b.id, dt.id, 'Redmi Note 13', 818
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 13 Pro', 560
+select b.id, dt.id, 'Redmi Note 13 Pro', 819
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 13 Pro+', 561
+select b.id, dt.id, 'Redmi Note 13 Pro+', 820
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi A3', 562
+select b.id, dt.id, 'Redmi A3', 821
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi A3x', 563
+select b.id, dt.id, 'Redmi A3x', 822
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 13', 564
+select b.id, dt.id, 'Redmi 13', 823
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 13C', 565
+select b.id, dt.id, 'Redmi 13C', 824
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 14C', 566
+select b.id, dt.id, 'Redmi 14C', 825
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi K70', 567
+select b.id, dt.id, 'Redmi K70', 826
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi K70 Pro', 568
+select b.id, dt.id, 'Redmi K70 Pro', 827
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 14', 569
+select b.id, dt.id, 'Redmi Note 14', 828
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 14 Pro', 570
+select b.id, dt.id, 'Redmi Note 14 Pro', 829
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi Note 14 Pro+', 571
+select b.id, dt.id, 'Redmi Note 14 Pro+', 830
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi A5', 572
+select b.id, dt.id, 'Redmi A5', 831
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi 15C', 573
+select b.id, dt.id, 'Redmi 15C', 832
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi K80', 574
+select b.id, dt.id, 'Redmi K80', 833
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Redmi K80 Pro', 575
+select b.id, dt.id, 'Redmi K80 Pro', 834
 from public.brands b, public.device_types dt
 where b.name = 'Redmi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S26', 576
+select b.id, dt.id, 'Galaxy S26', 835
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S26+', 577
+select b.id, dt.id, 'Galaxy S26+', 836
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S26 Ultra', 578
+select b.id, dt.id, 'Galaxy S26 Ultra', 837
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A37 5G', 579
+select b.id, dt.id, 'Galaxy A37 5G', 838
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A57 5G', 580
+select b.id, dt.id, 'Galaxy A57 5G', 839
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S22', 581
+select b.id, dt.id, 'Galaxy S22', 840
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S22+', 582
+select b.id, dt.id, 'Galaxy S22+', 841
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S22 Ultra', 583
+select b.id, dt.id, 'Galaxy S22 Ultra', 842
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S21 FE 5G', 584
+select b.id, dt.id, 'Galaxy S21 FE 5G', 843
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Z Fold 4', 585
+select b.id, dt.id, 'Galaxy Z Fold 4', 844
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Z Flip 4', 586
+select b.id, dt.id, 'Galaxy Z Flip 4', 845
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A13', 587
+select b.id, dt.id, 'Galaxy A13', 846
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A23', 588
+select b.id, dt.id, 'Galaxy A23', 847
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A33 5G', 589
+select b.id, dt.id, 'Galaxy A33 5G', 848
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A53 5G', 590
+select b.id, dt.id, 'Galaxy A53 5G', 849
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A73 5G', 591
+select b.id, dt.id, 'Galaxy A73 5G', 850
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A04', 592
+select b.id, dt.id, 'Galaxy A04', 851
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A04s', 593
+select b.id, dt.id, 'Galaxy A04s', 852
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M13', 594
+select b.id, dt.id, 'Galaxy M13', 853
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M23 5G', 595
+select b.id, dt.id, 'Galaxy M23 5G', 854
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M33 5G', 596
+select b.id, dt.id, 'Galaxy M33 5G', 855
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M53 5G', 597
+select b.id, dt.id, 'Galaxy M53 5G', 856
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy F13', 598
+select b.id, dt.id, 'Galaxy F13', 857
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy F23 5G', 599
+select b.id, dt.id, 'Galaxy F23 5G', 858
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S21 5G', 600
+select b.id, dt.id, 'Galaxy S21 5G', 859
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S21+ 5G', 601
+select b.id, dt.id, 'Galaxy S21+ 5G', 860
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S21 Ultra 5G', 602
+select b.id, dt.id, 'Galaxy S21 Ultra 5G', 861
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Z Fold 3 5G', 603
+select b.id, dt.id, 'Galaxy Z Fold 3 5G', 862
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Z Flip 3 5G', 604
+select b.id, dt.id, 'Galaxy Z Flip 3 5G', 863
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A02', 605
+select b.id, dt.id, 'Galaxy A02', 864
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A02s', 606
+select b.id, dt.id, 'Galaxy A02s', 865
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A12', 607
+select b.id, dt.id, 'Galaxy A12', 866
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A22', 608
+select b.id, dt.id, 'Galaxy A22', 867
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A22 5G', 609
+select b.id, dt.id, 'Galaxy A22 5G', 868
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A32', 610
+select b.id, dt.id, 'Galaxy A32', 869
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A32 5G', 611
+select b.id, dt.id, 'Galaxy A32 5G', 870
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A52', 612
+select b.id, dt.id, 'Galaxy A52', 871
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A52 5G', 613
+select b.id, dt.id, 'Galaxy A52 5G', 872
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A52s 5G', 614
+select b.id, dt.id, 'Galaxy A52s 5G', 873
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A72', 615
+select b.id, dt.id, 'Galaxy A72', 874
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M12', 616
+select b.id, dt.id, 'Galaxy M12', 875
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M22', 617
+select b.id, dt.id, 'Galaxy M22', 876
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M32', 618
+select b.id, dt.id, 'Galaxy M32', 877
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M52 5G', 619
+select b.id, dt.id, 'Galaxy M52 5G', 878
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy F12', 620
+select b.id, dt.id, 'Galaxy F12', 879
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy F22', 621
+select b.id, dt.id, 'Galaxy F22', 880
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy F42 5G', 622
+select b.id, dt.id, 'Galaxy F42 5G', 881
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy F62', 623
+select b.id, dt.id, 'Galaxy F62', 882
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S20', 624
+select b.id, dt.id, 'Galaxy S20', 883
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S20+', 625
+select b.id, dt.id, 'Galaxy S20+', 884
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S20 Ultra', 626
+select b.id, dt.id, 'Galaxy S20 Ultra', 885
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S20 FE', 627
+select b.id, dt.id, 'Galaxy S20 FE', 886
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Note 20', 628
+select b.id, dt.id, 'Galaxy Note 20', 887
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Note 20 Ultra', 629
+select b.id, dt.id, 'Galaxy Note 20 Ultra', 888
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Note 10 Lite', 630
+select b.id, dt.id, 'Galaxy Note 10 Lite', 889
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S10 Lite', 631
+select b.id, dt.id, 'Galaxy S10 Lite', 890
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Z Flip', 632
+select b.id, dt.id, 'Galaxy Z Flip', 891
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Z Flip 5G', 633
+select b.id, dt.id, 'Galaxy Z Flip 5G', 892
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Z Fold 2 5G', 634
+select b.id, dt.id, 'Galaxy Z Fold 2 5G', 893
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A01', 635
+select b.id, dt.id, 'Galaxy A01', 894
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A11', 636
+select b.id, dt.id, 'Galaxy A11', 895
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A21', 637
+select b.id, dt.id, 'Galaxy A21', 896
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A21s', 638
+select b.id, dt.id, 'Galaxy A21s', 897
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A31', 639
+select b.id, dt.id, 'Galaxy A31', 898
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A41', 640
+select b.id, dt.id, 'Galaxy A41', 899
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A51', 641
+select b.id, dt.id, 'Galaxy A51', 900
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A51 5G', 642
+select b.id, dt.id, 'Galaxy A51 5G', 901
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A71', 643
+select b.id, dt.id, 'Galaxy A71', 902
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A71 5G', 644
+select b.id, dt.id, 'Galaxy A71 5G', 903
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M01', 645
+select b.id, dt.id, 'Galaxy M01', 904
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M11', 646
+select b.id, dt.id, 'Galaxy M11', 905
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M21', 647
+select b.id, dt.id, 'Galaxy M21', 906
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M31', 648
+select b.id, dt.id, 'Galaxy M31', 907
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M31s', 649
+select b.id, dt.id, 'Galaxy M31s', 908
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M51', 650
+select b.id, dt.id, 'Galaxy M51', 909
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy F41', 651
+select b.id, dt.id, 'Galaxy F41', 910
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S10', 652
+select b.id, dt.id, 'Galaxy S10', 911
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S10+', 653
+select b.id, dt.id, 'Galaxy S10+', 912
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S10e', 654
+select b.id, dt.id, 'Galaxy S10e', 913
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S10 5G', 655
+select b.id, dt.id, 'Galaxy S10 5G', 914
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Note 10', 656
+select b.id, dt.id, 'Galaxy Note 10', 915
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Note 10+', 657
+select b.id, dt.id, 'Galaxy Note 10+', 916
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Fold', 658
+select b.id, dt.id, 'Galaxy Fold', 917
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A10', 659
+select b.id, dt.id, 'Galaxy A10', 918
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A10s', 660
+select b.id, dt.id, 'Galaxy A10s', 919
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A20', 661
+select b.id, dt.id, 'Galaxy A20', 920
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A20s', 662
+select b.id, dt.id, 'Galaxy A20s', 921
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A30', 663
+select b.id, dt.id, 'Galaxy A30', 922
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A30s', 664
+select b.id, dt.id, 'Galaxy A30s', 923
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A40', 665
+select b.id, dt.id, 'Galaxy A40', 924
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A50', 666
+select b.id, dt.id, 'Galaxy A50', 925
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A50s', 667
+select b.id, dt.id, 'Galaxy A50s', 926
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A60', 668
+select b.id, dt.id, 'Galaxy A60', 927
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A70', 669
+select b.id, dt.id, 'Galaxy A70', 928
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A70s', 670
+select b.id, dt.id, 'Galaxy A70s', 929
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A80', 671
+select b.id, dt.id, 'Galaxy A80', 930
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A90 5G', 672
+select b.id, dt.id, 'Galaxy A90 5G', 931
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M10', 673
+select b.id, dt.id, 'Galaxy M10', 932
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M20', 674
+select b.id, dt.id, 'Galaxy M20', 933
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M30', 675
+select b.id, dt.id, 'Galaxy M30', 934
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M30s', 676
+select b.id, dt.id, 'Galaxy M30s', 935
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy M40', 677
+select b.id, dt.id, 'Galaxy M40', 936
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S9', 678
+select b.id, dt.id, 'Galaxy S9', 937
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S9+', 679
+select b.id, dt.id, 'Galaxy S9+', 938
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Note 9', 680
+select b.id, dt.id, 'Galaxy Note 9', 939
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A6', 681
+select b.id, dt.id, 'Galaxy A6', 940
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A6+', 682
+select b.id, dt.id, 'Galaxy A6+', 941
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A7 (2018)', 683
+select b.id, dt.id, 'Galaxy A7 (2018)', 942
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A8 (2018)', 684
+select b.id, dt.id, 'Galaxy A8 (2018)', 943
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A8+ (2018)', 685
+select b.id, dt.id, 'Galaxy A8+ (2018)', 944
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A8s', 686
+select b.id, dt.id, 'Galaxy A8s', 945
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A9 (2018)', 687
+select b.id, dt.id, 'Galaxy A9 (2018)', 946
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy J4', 688
+select b.id, dt.id, 'Galaxy J4', 947
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy J6', 689
+select b.id, dt.id, 'Galaxy J6', 948
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy J8', 690
+select b.id, dt.id, 'Galaxy J8', 949
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S8', 691
+select b.id, dt.id, 'Galaxy S8', 950
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy S8+', 692
+select b.id, dt.id, 'Galaxy S8+', 951
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Note 8', 693
+select b.id, dt.id, 'Galaxy Note 8', 952
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy Note FE', 694
+select b.id, dt.id, 'Galaxy Note FE', 953
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A3 (2017)', 695
+select b.id, dt.id, 'Galaxy A3 (2017)', 954
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A5 (2017)', 696
+select b.id, dt.id, 'Galaxy A5 (2017)', 955
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy A7 (2017)', 697
+select b.id, dt.id, 'Galaxy A7 (2017)', 956
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy J3 (2017)', 698
+select b.id, dt.id, 'Galaxy J3 (2017)', 957
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy J5 (2017)', 699
+select b.id, dt.id, 'Galaxy J5 (2017)', 958
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy J7 (2017)', 700
+select b.id, dt.id, 'Galaxy J7 (2017)', 959
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy J7 Pro', 701
+select b.id, dt.id, 'Galaxy J7 Pro', 960
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Galaxy J7 Prime', 702
+select b.id, dt.id, 'Galaxy J7 Prime', 961
 from public.brands b, public.device_types dt
 where b.name = 'Samsung' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 15', 962
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 15 Pro', 963
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 16', 964
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 16 Pro', 965
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 16 Premier', 966
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 5', 967
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 5 Pro', 968
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 6', 969
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 6 Go', 970
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pop 4', 971
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pova', 972
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Phantom 9', 973
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 17', 974
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 17 Pro', 975
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 7', 976
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 7 Pro', 977
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 8', 978
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 8 Pro', 979
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 8C', 980
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pop 5', 981
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pova 2', 982
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 18', 983
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 18P', 984
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 18 Premier', 985
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 19', 986
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 19 Pro', 987
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 9', 988
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 9 Pro', 989
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pop 6', 990
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pova 3', 991
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pova 4', 992
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pova 4 Pro', 993
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Phantom X', 994
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 20', 995
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 20 Pro', 996
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 20 Premier', 997
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 10', 998
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 10 Pro', 999
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 10C', 1000
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pop 7', 1001
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pova 5', 1002
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pova 5 Pro', 1003
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Phantom X2', 1004
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Phantom X2 Pro', 1005
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Phantom V Fold', 1006
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Phantom V Flip', 1007
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 30', 1008
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 30 Pro', 1009
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 30 Premier', 1010
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 20', 1011
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 20 Pro', 1012
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 20 Pro+', 1013
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 20C', 1014
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark Go 2024', 1015
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pop 8', 1016
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pova 6', 1017
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pova 6 Pro', 1018
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Phantom V Fold2', 1019
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Phantom V Flip2', 1020
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 40', 1021
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 40 Pro', 1022
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Camon 40 Premier', 1023
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 30', 1024
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 30 Pro', 1025
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark 30C', 1026
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Spark Go 2025', 1027
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pova 7', 1028
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
+on conflict (brand_id, name) do nothing;
+insert into public.models (brand_id, device_type_id, name, sort_order)
+select b.id, dt.id, 'Tecno Pova 7 Pro', 1029
+from public.brands b, public.device_types dt
+where b.name = 'Tecno' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V5', 703
+select b.id, dt.id, 'vivo V5', 1030
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V5s', 704
+select b.id, dt.id, 'vivo V5s', 1031
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V5 Plus', 705
+select b.id, dt.id, 'vivo V5 Plus', 1032
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V7', 706
+select b.id, dt.id, 'vivo V7', 1033
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V7+', 707
+select b.id, dt.id, 'vivo V7+', 1034
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y53', 708
+select b.id, dt.id, 'vivo Y53', 1035
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y55', 709
+select b.id, dt.id, 'vivo Y55', 1036
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y65', 710
+select b.id, dt.id, 'vivo Y65', 1037
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y66', 711
+select b.id, dt.id, 'vivo Y66', 1038
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y69', 712
+select b.id, dt.id, 'vivo Y69', 1039
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V9', 713
+select b.id, dt.id, 'vivo V9', 1040
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V11', 714
+select b.id, dt.id, 'vivo V11', 1041
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V11 Pro', 715
+select b.id, dt.id, 'vivo V11 Pro', 1042
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V11i', 716
+select b.id, dt.id, 'vivo V11i', 1043
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo NEX', 717
+select b.id, dt.id, 'vivo NEX', 1044
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo NEX S', 718
+select b.id, dt.id, 'vivo NEX S', 1045
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X21', 719
+select b.id, dt.id, 'vivo X21', 1046
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y71', 720
+select b.id, dt.id, 'vivo Y71', 1047
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y81', 721
+select b.id, dt.id, 'vivo Y81', 1048
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y83', 722
+select b.id, dt.id, 'vivo Y83', 1049
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y91', 723
+select b.id, dt.id, 'vivo Y91', 1050
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y93', 724
+select b.id, dt.id, 'vivo Y93', 1051
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y95', 725
+select b.id, dt.id, 'vivo Y95', 1052
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V15', 726
+select b.id, dt.id, 'vivo V15', 1053
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V15 Pro', 727
+select b.id, dt.id, 'vivo V15 Pro', 1054
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V17', 728
+select b.id, dt.id, 'vivo V17', 1055
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V17 Pro', 729
+select b.id, dt.id, 'vivo V17 Pro', 1056
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo NEX 3', 730
+select b.id, dt.id, 'vivo NEX 3', 1057
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X27', 731
+select b.id, dt.id, 'vivo X27', 1058
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X30', 732
+select b.id, dt.id, 'vivo X30', 1059
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X30 Pro', 733
+select b.id, dt.id, 'vivo X30 Pro', 1060
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo S1', 734
+select b.id, dt.id, 'vivo S1', 1061
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo S1 Pro', 735
+select b.id, dt.id, 'vivo S1 Pro', 1062
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y11', 736
+select b.id, dt.id, 'vivo Y11', 1063
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y12', 737
+select b.id, dt.id, 'vivo Y12', 1064
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y15', 738
+select b.id, dt.id, 'vivo Y15', 1065
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y17', 739
+select b.id, dt.id, 'vivo Y17', 1066
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y19', 740
+select b.id, dt.id, 'vivo Y19', 1067
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo U10', 741
+select b.id, dt.id, 'vivo U10', 1068
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo U20', 742
+select b.id, dt.id, 'vivo U20', 1069
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V19', 743
+select b.id, dt.id, 'vivo V19', 1070
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V20', 744
+select b.id, dt.id, 'vivo V20', 1071
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V20 Pro', 745
+select b.id, dt.id, 'vivo V20 Pro', 1072
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V20 SE', 746
+select b.id, dt.id, 'vivo V20 SE', 1073
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X50', 747
+select b.id, dt.id, 'vivo X50', 1074
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X50 Pro', 748
+select b.id, dt.id, 'vivo X50 Pro', 1075
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X51', 749
+select b.id, dt.id, 'vivo X51', 1076
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y50', 750
+select b.id, dt.id, 'vivo Y50', 1077
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y30', 751
+select b.id, dt.id, 'vivo Y30', 1078
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y20', 752
+select b.id, dt.id, 'vivo Y20', 1079
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y20s', 753
+select b.id, dt.id, 'vivo Y20s', 1080
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y12s', 754
+select b.id, dt.id, 'vivo Y12s', 1081
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y51', 755
+select b.id, dt.id, 'vivo Y51', 1082
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo S6', 756
+select b.id, dt.id, 'vivo S6', 1083
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo S7', 757
+select b.id, dt.id, 'vivo S7', 1084
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V21', 758
+select b.id, dt.id, 'vivo V21', 1085
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V21e', 759
+select b.id, dt.id, 'vivo V21e', 1086
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X60', 760
+select b.id, dt.id, 'vivo X60', 1087
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X60 Pro', 761
+select b.id, dt.id, 'vivo X60 Pro', 1088
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X60 Pro+', 762
+select b.id, dt.id, 'vivo X60 Pro+', 1089
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X70', 763
+select b.id, dt.id, 'vivo X70', 1090
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X70 Pro', 764
+select b.id, dt.id, 'vivo X70 Pro', 1091
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X70 Pro+', 765
+select b.id, dt.id, 'vivo X70 Pro+', 1092
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y31', 766
+select b.id, dt.id, 'vivo Y31', 1093
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y53s', 767
+select b.id, dt.id, 'vivo Y53s', 1094
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y21', 768
+select b.id, dt.id, 'vivo Y21', 1095
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y21s', 769
+select b.id, dt.id, 'vivo Y21s', 1096
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y33s', 770
+select b.id, dt.id, 'vivo Y33s', 1097
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y15s', 771
+select b.id, dt.id, 'vivo Y15s', 1098
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y01', 772
+select b.id, dt.id, 'vivo Y01', 1099
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo S9', 773
+select b.id, dt.id, 'vivo S9', 1100
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo S10', 774
+select b.id, dt.id, 'vivo S10', 1101
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo S12', 775
+select b.id, dt.id, 'vivo S12', 1102
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V23', 776
+select b.id, dt.id, 'vivo V23', 1103
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V23 Pro', 777
+select b.id, dt.id, 'vivo V23 Pro', 1104
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V23e', 778
+select b.id, dt.id, 'vivo V23e', 1105
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V25', 779
+select b.id, dt.id, 'vivo V25', 1106
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V25 Pro', 780
+select b.id, dt.id, 'vivo V25 Pro', 1107
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V25e', 781
+select b.id, dt.id, 'vivo V25e', 1108
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X80', 782
+select b.id, dt.id, 'vivo X80', 1109
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X80 Pro', 783
+select b.id, dt.id, 'vivo X80 Pro', 1110
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X Fold', 784
+select b.id, dt.id, 'vivo X Fold', 1111
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X Note', 785
+select b.id, dt.id, 'vivo X Note', 1112
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y22', 786
+select b.id, dt.id, 'vivo Y22', 1113
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y22s', 787
+select b.id, dt.id, 'vivo Y22s', 1114
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y35', 788
+select b.id, dt.id, 'vivo Y35', 1115
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y16', 789
+select b.id, dt.id, 'vivo Y16', 1116
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y02', 790
+select b.id, dt.id, 'vivo Y02', 1117
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y02s', 791
+select b.id, dt.id, 'vivo Y02s', 1118
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo T1', 792
+select b.id, dt.id, 'vivo T1', 1119
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V27', 793
+select b.id, dt.id, 'vivo V27', 1120
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V27 Pro', 794
+select b.id, dt.id, 'vivo V27 Pro', 1121
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V27e', 795
+select b.id, dt.id, 'vivo V27e', 1122
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V29', 796
+select b.id, dt.id, 'vivo V29', 1123
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V29 Pro', 797
+select b.id, dt.id, 'vivo V29 Pro', 1124
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V29e', 798
+select b.id, dt.id, 'vivo V29e', 1125
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X90', 799
+select b.id, dt.id, 'vivo X90', 1126
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X90 Pro', 800
+select b.id, dt.id, 'vivo X90 Pro', 1127
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X90 Pro+', 801
+select b.id, dt.id, 'vivo X90 Pro+', 1128
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X Fold2', 802
+select b.id, dt.id, 'vivo X Fold2', 1129
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X Flip', 803
+select b.id, dt.id, 'vivo X Flip', 1130
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y100', 804
+select b.id, dt.id, 'vivo Y100', 1131
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y27', 805
+select b.id, dt.id, 'vivo Y27', 1132
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y36', 806
+select b.id, dt.id, 'vivo Y36', 1133
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y17s', 807
+select b.id, dt.id, 'vivo Y17s', 1134
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y56', 808
+select b.id, dt.id, 'vivo Y56', 1135
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y78', 809
+select b.id, dt.id, 'vivo Y78', 1136
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo T2', 810
+select b.id, dt.id, 'vivo T2', 1137
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V30', 811
+select b.id, dt.id, 'vivo V30', 1138
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V30 Pro', 812
+select b.id, dt.id, 'vivo V30 Pro', 1139
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V30e', 813
+select b.id, dt.id, 'vivo V30e', 1140
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X100', 814
+select b.id, dt.id, 'vivo X100', 1141
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X100 Pro', 815
+select b.id, dt.id, 'vivo X100 Pro', 1142
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X100 Ultra', 816
+select b.id, dt.id, 'vivo X100 Ultra', 1143
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X Fold3', 817
+select b.id, dt.id, 'vivo X Fold3', 1144
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X Fold3 Pro', 818
+select b.id, dt.id, 'vivo X Fold3 Pro', 1145
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y200', 819
+select b.id, dt.id, 'vivo Y200', 1146
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y28', 820
+select b.id, dt.id, 'vivo Y28', 1147
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y18', 821
+select b.id, dt.id, 'vivo Y18', 1148
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y03', 822
+select b.id, dt.id, 'vivo Y03', 1149
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y38', 823
+select b.id, dt.id, 'vivo Y38', 1150
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo T3', 824
+select b.id, dt.id, 'vivo T3', 1151
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V40', 825
+select b.id, dt.id, 'vivo V40', 1152
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V40 Pro', 826
+select b.id, dt.id, 'vivo V40 Pro', 1153
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V40e', 827
+select b.id, dt.id, 'vivo V40e', 1154
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V40 SE', 828
+select b.id, dt.id, 'vivo V40 SE', 1155
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V50', 829
+select b.id, dt.id, 'vivo V50', 1156
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo V50e', 830
+select b.id, dt.id, 'vivo V50e', 1157
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X200', 831
+select b.id, dt.id, 'vivo X200', 1158
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo X200 Pro', 832
+select b.id, dt.id, 'vivo X200 Pro', 1159
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y29', 833
+select b.id, dt.id, 'vivo Y29', 1160
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y19s', 834
+select b.id, dt.id, 'vivo Y19s', 1161
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo Y300', 835
+select b.id, dt.id, 'vivo Y300', 1162
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'vivo S19', 836
+select b.id, dt.id, 'vivo S19', 1163
 from public.brands b, public.device_types dt
 where b.name = 'vivo' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 6', 837
+select b.id, dt.id, 'Xiaomi Mi 6', 1164
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 6X', 838
+select b.id, dt.id, 'Xiaomi Mi 6X', 1165
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi Mix 2', 839
+select b.id, dt.id, 'Xiaomi Mi Mix 2', 1166
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi Mix 2S', 840
+select b.id, dt.id, 'Xiaomi Mi Mix 2S', 1167
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi Note 3', 841
+select b.id, dt.id, 'Xiaomi Mi Note 3', 1168
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi Max 2', 842
+select b.id, dt.id, 'Xiaomi Mi Max 2', 1169
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi A1', 843
+select b.id, dt.id, 'Xiaomi Mi A1', 1170
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 8', 844
+select b.id, dt.id, 'Xiaomi Mi 8', 1171
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 8 Lite', 845
+select b.id, dt.id, 'Xiaomi Mi 8 Lite', 1172
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 8 Pro', 846
+select b.id, dt.id, 'Xiaomi Mi 8 Pro', 1173
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 8 SE', 847
+select b.id, dt.id, 'Xiaomi Mi 8 SE', 1174
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi Mix 3', 848
+select b.id, dt.id, 'Xiaomi Mi Mix 3', 1175
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi Max 3', 849
+select b.id, dt.id, 'Xiaomi Mi Max 3', 1176
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi A2', 850
+select b.id, dt.id, 'Xiaomi Mi A2', 1177
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi A2 Lite', 851
+select b.id, dt.id, 'Xiaomi Mi A2 Lite', 1178
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 9', 852
+select b.id, dt.id, 'Xiaomi Mi 9', 1179
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 9 SE', 853
+select b.id, dt.id, 'Xiaomi Mi 9 SE', 1180
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 9T', 854
+select b.id, dt.id, 'Xiaomi Mi 9T', 1181
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 9T Pro', 855
+select b.id, dt.id, 'Xiaomi Mi 9T Pro', 1182
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 9 Lite', 856
+select b.id, dt.id, 'Xiaomi Mi 9 Lite', 1183
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi A3', 857
+select b.id, dt.id, 'Xiaomi Mi A3', 1184
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi Note 10', 858
+select b.id, dt.id, 'Xiaomi Mi Note 10', 1185
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi Note 10 Pro', 859
+select b.id, dt.id, 'Xiaomi Mi Note 10 Pro', 1186
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi CC9', 860
+select b.id, dt.id, 'Xiaomi Mi CC9', 1187
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 10', 861
+select b.id, dt.id, 'Xiaomi Mi 10', 1188
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 10 Pro', 862
+select b.id, dt.id, 'Xiaomi Mi 10 Pro', 1189
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 10 Lite', 863
+select b.id, dt.id, 'Xiaomi Mi 10 Lite', 1190
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 10T', 864
+select b.id, dt.id, 'Xiaomi Mi 10T', 1191
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 10T Pro', 865
+select b.id, dt.id, 'Xiaomi Mi 10T Pro', 1192
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 10T Lite', 866
+select b.id, dt.id, 'Xiaomi Mi 10T Lite', 1193
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi Note 10 Lite', 867
+select b.id, dt.id, 'Xiaomi Mi Note 10 Lite', 1194
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 11', 868
+select b.id, dt.id, 'Xiaomi Mi 11', 1195
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 11 Pro', 869
+select b.id, dt.id, 'Xiaomi Mi 11 Pro', 1196
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 11 Ultra', 870
+select b.id, dt.id, 'Xiaomi Mi 11 Ultra', 1197
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 11 Lite', 871
+select b.id, dt.id, 'Xiaomi Mi 11 Lite', 1198
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 11 Lite 5G', 872
+select b.id, dt.id, 'Xiaomi Mi 11 Lite 5G', 1199
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 11i', 873
+select b.id, dt.id, 'Xiaomi Mi 11i', 1200
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 11X', 874
+select b.id, dt.id, 'Xiaomi Mi 11X', 1201
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi 11X Pro', 875
+select b.id, dt.id, 'Xiaomi Mi 11X Pro', 1202
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 11T', 876
+select b.id, dt.id, 'Xiaomi 11T', 1203
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 11T Pro', 877
+select b.id, dt.id, 'Xiaomi 11T Pro', 1204
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 11 Lite 5G NE', 878
+select b.id, dt.id, 'Xiaomi 11 Lite 5G NE', 1205
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mi Mix 4', 879
+select b.id, dt.id, 'Xiaomi Mi Mix 4', 1206
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 12', 880
+select b.id, dt.id, 'Xiaomi 12', 1207
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 12 Pro', 881
+select b.id, dt.id, 'Xiaomi 12 Pro', 1208
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 12X', 882
+select b.id, dt.id, 'Xiaomi 12X', 1209
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 12 Lite', 883
+select b.id, dt.id, 'Xiaomi 12 Lite', 1210
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 12T', 884
+select b.id, dt.id, 'Xiaomi 12T', 1211
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 12T Pro', 885
+select b.id, dt.id, 'Xiaomi 12T Pro', 1212
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 12S Ultra', 886
+select b.id, dt.id, 'Xiaomi 12S Ultra', 1213
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mix Fold 2', 887
+select b.id, dt.id, 'Xiaomi Mix Fold 2', 1214
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 13', 888
+select b.id, dt.id, 'Xiaomi 13', 1215
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 13 Pro', 889
+select b.id, dt.id, 'Xiaomi 13 Pro', 1216
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 13 Lite', 890
+select b.id, dt.id, 'Xiaomi 13 Lite', 1217
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 13T', 891
+select b.id, dt.id, 'Xiaomi 13T', 1218
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 13T Pro', 892
+select b.id, dt.id, 'Xiaomi 13T Pro', 1219
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 13 Ultra', 893
+select b.id, dt.id, 'Xiaomi 13 Ultra', 1220
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mix Fold 3', 894
+select b.id, dt.id, 'Xiaomi Mix Fold 3', 1221
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 14', 895
+select b.id, dt.id, 'Xiaomi 14', 1222
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 14 Pro', 896
+select b.id, dt.id, 'Xiaomi 14 Pro', 1223
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 14 Ultra', 897
+select b.id, dt.id, 'Xiaomi 14 Ultra', 1224
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 14T', 898
+select b.id, dt.id, 'Xiaomi 14T', 1225
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 14T Pro', 899
+select b.id, dt.id, 'Xiaomi 14T Pro', 1226
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 14 Civi', 900
+select b.id, dt.id, 'Xiaomi 14 Civi', 1227
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mix Fold 4', 901
+select b.id, dt.id, 'Xiaomi Mix Fold 4', 1228
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi Mix Flip', 902
+select b.id, dt.id, 'Xiaomi Mix Flip', 1229
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 15', 903
+select b.id, dt.id, 'Xiaomi 15', 1230
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 15 Pro', 904
+select b.id, dt.id, 'Xiaomi 15 Pro', 1231
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 15 Ultra', 905
+select b.id, dt.id, 'Xiaomi 15 Ultra', 1232
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 15T', 906
+select b.id, dt.id, 'Xiaomi 15T', 1233
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;
 insert into public.models (brand_id, device_type_id, name, sort_order)
-select b.id, dt.id, 'Xiaomi 15T Pro', 907
+select b.id, dt.id, 'Xiaomi 15T Pro', 1234
 from public.brands b, public.device_types dt
 where b.name = 'Xiaomi' and dt.name_en = 'smartphone'
 on conflict (brand_id, name) do nothing;

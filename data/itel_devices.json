@@ -1,0 +1,60 @@
+{
+  "brand": "itel",
+  "_note": "الموديلات الرئيسية 2020–2026 (هواتف)، بدون ألوان. قابلة للإضافة/التعديل.",
+  "devices": [
+    {
+      "device_type": "هاتف",
+      "device_type_en": "smartphone",
+      "models": [
+        { "name": "itel Vision 1", "colors": [] },
+        { "name": "itel Vision 1 Pro", "colors": [] },
+        { "name": "itel A48", "colors": [] },
+        { "name": "itel A37", "colors": [] },
+        { "name": "itel A47", "colors": [] },
+        { "name": "itel S16", "colors": [] },
+        { "name": "itel S16 Pro", "colors": [] },
+        { "name": "itel P36", "colors": [] },
+        { "name": "itel P37", "colors": [] },
+        { "name": "itel P37 Pro", "colors": [] },
+
+        { "name": "itel Vision 2", "colors": [] },
+        { "name": "itel Vision 2S", "colors": [] },
+        { "name": "itel A58", "colors": [] },
+        { "name": "itel A17", "colors": [] },
+        { "name": "itel A27", "colors": [] },
+        { "name": "itel S17", "colors": [] },
+        { "name": "itel P38", "colors": [] },
+        { "name": "itel P38 Pro", "colors": [] },
+
+        { "name": "itel Vision 3", "colors": [] },
+        { "name": "itel Vision 3 Plus", "colors": [] },
+        { "name": "itel A49", "colors": [] },
+        { "name": "itel A58 Pro", "colors": [] },
+        { "name": "itel S18", "colors": [] },
+        { "name": "itel P40", "colors": [] },
+
+        { "name": "itel A60", "colors": [] },
+        { "name": "itel A60s", "colors": [] },
+        { "name": "itel A05s", "colors": [] },
+        { "name": "itel P55", "colors": [] },
+        { "name": "itel P55 5G", "colors": [] },
+        { "name": "itel P55+", "colors": [] },
+        { "name": "itel S23", "colors": [] },
+        { "name": "itel S23+", "colors": [] },
+        { "name": "itel RS4", "colors": [] },
+
+        { "name": "itel A70", "colors": [] },
+        { "name": "itel A80", "colors": [] },
+        { "name": "itel A18", "colors": [] },
+        { "name": "itel P65", "colors": [] },
+        { "name": "itel S24", "colors": [] },
+        { "name": "itel City 100", "colors": [] },
+
+        { "name": "itel A90", "colors": [] },
+        { "name": "itel P55T", "colors": [] },
+        { "name": "itel A95 5G", "colors": [] },
+        { "name": "itel Super 30", "colors": [] }
+      ]
+    }
+  ]
+}

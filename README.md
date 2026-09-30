@@ -14,6 +14,12 @@ data/
   redmi_devices.json     # موديلات Redmi (بدون ألوان)
   xiaomi_devices.json    # موديلات Xiaomi (بدون ألوان)
   infinix_devices.json   # موديلات Infinix (بدون ألوان)
+  poco_devices.json      # موديلات POCO (بدون ألوان)
+  honor_devices.json     # موديلات Honor (بدون ألوان)
+  huawei_devices.json    # موديلات Huawei (بدون ألوان)
+  nokia_devices.json     # موديلات Nokia (بدون ألوان)
+  tecno_devices.json     # موديلات Tecno (بدون ألوان)
+  itel_devices.json      # موديلات itel (بدون ألوان)
   iphone_parts.json      # فئات قطع غيار iPhone/الجودات/التوافق
 scripts/
   generate_seed.py       # يولّد supabase/seed.sql من data/
@@ -27,13 +33,14 @@ docs/
 
 ## البيانات الحالية
 
-- **الماركات:** 8 (Apple، Samsung، OPPO، vivo، realme، Redmi، Xiaomi، Infinix).
-- **الأجهزة:** 907 موديل — Apple 97، Samsung 127، OPPO 166، vivo 134، realme 120، Infinix 99، Redmi 93، Xiaomi 71.
+- **الماركات:** 14 (Apple، Samsung، OPPO، vivo، realme، Redmi، Xiaomi، Infinix، POCO، Honor، Huawei، Nokia، Tecno، itel).
+- **الأجهزة:** 1234 موديل — OPPO 166، vivo 134، Samsung 127، realme 120، Infinix 99، Apple 97، Redmi 93، Xiaomi 71، Tecno 68، Honor 66، Huawei 59، POCO 49، itel 43، Nokia 42.
 - **الألوان:** 198 لوناً (Apple + Samsung فقط؛ باقي الماركات بدون ألوان حسب الطلب).
 - **قطع الغيار:** 28 فئة لـ iPhone، مع الجودات والتوافق. (قطع باقي الماركات/التابلت/الساعة تُضاف لاحقاً.)
 
-> ملاحظة: موديلات OPPO/vivo/realme/Redmi/Xiaomi/Infinix هي القوائم الرئيسية 2017–2026
-> مُجمّعة من المعرفة (ليست كل نسخة إقليمية)، وقابلة للإضافة/التصحيح في ملفات `data/`.
+> ملاحظة: موديلات الماركات عدا Apple/Samsung هي قوائم رئيسية (Apple/Samsung/OPPO/vivo/realme/Redmi/Xiaomi/Infinix
+> من 2017، وPOCO/Honor/Huawei/Nokia/Tecno/itel من 2020) مُجمّعة من المعرفة (ليست كل نسخة إقليمية)،
+> وقابلة للإضافة/التصحيح في ملفات `data/`.
 
 ## التطبيق على Supabase
 

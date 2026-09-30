@@ -1,0 +1,57 @@
+{
+  "brand": "Nokia",
+  "_note": "الموديلات الرئيسية 2020–2026 (هواتف ذكية HMD)، بدون ألوان. قابلة للإضافة/التعديل.",
+  "devices": [
+    {
+      "device_type": "هاتف",
+      "device_type_en": "smartphone",
+      "models": [
+        { "name": "Nokia 1.3", "colors": [] },
+        { "name": "Nokia 2.3", "colors": [] },
+        { "name": "Nokia 5.3", "colors": [] },
+        { "name": "Nokia 8.3 5G", "colors": [] },
+        { "name": "Nokia C1", "colors": [] },
+        { "name": "Nokia C2", "colors": [] },
+        { "name": "Nokia C3", "colors": [] },
+        { "name": "Nokia C5 Endi", "colors": [] },
+        { "name": "Nokia 8 V 5G", "colors": [] },
+
+        { "name": "Nokia 1.4", "colors": [] },
+        { "name": "Nokia 2.4", "colors": [] },
+        { "name": "Nokia 3.4", "colors": [] },
+        { "name": "Nokia 5.4", "colors": [] },
+        { "name": "Nokia C10", "colors": [] },
+        { "name": "Nokia C20", "colors": [] },
+        { "name": "Nokia C30", "colors": [] },
+        { "name": "Nokia G10", "colors": [] },
+        { "name": "Nokia G20", "colors": [] },
+        { "name": "Nokia G50", "colors": [] },
+        { "name": "Nokia X10", "colors": [] },
+        { "name": "Nokia X20", "colors": [] },
+        { "name": "Nokia C01 Plus", "colors": [] },
+
+        { "name": "Nokia G11", "colors": [] },
+        { "name": "Nokia G21", "colors": [] },
+        { "name": "Nokia G60 5G", "colors": [] },
+        { "name": "Nokia X30 5G", "colors": [] },
+        { "name": "Nokia C21", "colors": [] },
+        { "name": "Nokia C21 Plus", "colors": [] },
+        { "name": "Nokia C31", "colors": [] },
+        { "name": "Nokia C2 (2nd Edition)", "colors": [] },
+        { "name": "Nokia G11 Plus", "colors": [] },
+
+        { "name": "Nokia G22", "colors": [] },
+        { "name": "Nokia G42 5G", "colors": [] },
+        { "name": "Nokia G310", "colors": [] },
+        { "name": "Nokia C12", "colors": [] },
+        { "name": "Nokia C22", "colors": [] },
+        { "name": "Nokia C32", "colors": [] },
+        { "name": "Nokia C110", "colors": [] },
+        { "name": "Nokia C210", "colors": [] },
+        { "name": "Nokia C300", "colors": [] },
+        { "name": "Nokia X100", "colors": [] },
+        { "name": "Nokia G100", "colors": [] }
+      ]
+    }
+  ]
+}

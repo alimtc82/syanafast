@@ -1,0 +1,69 @@
+{
+  "_description": "قطع غيار iPhone (الدفعة 2). القوائم قابلة للإضافة لاحقاً (بنود/جودات منسية).",
+  "brand": "Apple",
+  "applies_to_device_type_en": "smartphone",
+  "model_order_reference": "ترتيب الموديلات يتبع مصفوفة الهواتف في apple_devices.json (يُستخدم لقواعد المدى).",
+
+  "qualities": [
+    "اصلي",
+    "اصلي كامل",
+    "اصلي فاضي",
+    "اصلي جديد",
+    "خلع",
+    "خلع كامل",
+    "خلع فاضي",
+    "كوبي",
+    "برند",
+    "OLED",
+    "COPY",
+    "مجدد مغير باغه",
+    "مجدد مغير باغه + تاتش",
+    "مجدد مغير باغه + تاتش + فلاته"
+  ],
+
+  "part_brands": [
+    { "name": "GX", "category": "شاشة", "note": "مثال على OLED" },
+    { "name": "JK", "category": "شاشة", "note": "مثال على COPY" }
+  ],
+
+  "part_categories": [
+    {
+      "name_ar": "شاشة",
+      "name_en": "screen",
+      "is_color_dependent": false,
+      "has_quality": true,
+      "has_percentage": true,
+      "has_part_brand": true,
+      "qualities": ["OLED", "COPY", "مجدد مغير باغه", "مجدد مغير باغه + تاتش", "مجدد مغير باغه + تاتش + فلاته", "خلع"],
+      "compat": "all",
+      "notes": "خلع يُقاس بنسبة مئوية من القرب للشاشة الجديدة. OLED مثل GX و COPY مثل JK."
+    },
+    { "name_ar": "ظهر", "name_en": "back glass", "is_color_dependent": true, "has_quality": true, "qualities": ["خلع كامل", "خلع", "اصلي كامل", "اصلي", "كوبي"], "compat": "all", "notes": "مرتبط باللون. (ملاحظة فنية: الظهر الزجاجي فعلياً يبدأ من iPhone 8)." },
+    { "name_ar": "شاسيه", "name_en": "chassis", "has_quality": true, "qualities": ["خلع كامل", "خلع فاضي", "اصلي كامل", "اصلي فاضي", "كوبي"], "compat": "all" },
+    { "name_ar": "تاتش", "name_en": "digitizer / touch", "has_quality": true, "qualities": [], "compat": "all" },
+    { "name_ar": "باغة", "name_en": "front glass", "is_color_dependent": true, "has_quality": true, "qualities": [], "compat": "range_0_7", "allowed_colors": ["White أبيض", "Black أسود"], "notes": "لونان فقط أبيض/أسود، للموديلات iPhone 6 → 8 Plus." },
+    { "name_ar": "فلاته شحن", "name_en": "charging flex", "has_quality": true, "qualities": ["خلع", "اصلي جديد", "كوبي"], "compat": "all" },
+    { "name_ar": "فلاته باور", "name_en": "power flex", "has_quality": true, "qualities": [], "compat": "all" },
+    { "name_ar": "فلاته سماعة", "name_en": "earpiece flex", "has_quality": true, "qualities": [], "compat": "all" },
+    { "name_ar": "فلاته كاميرا أمامية كاملة", "name_en": "front camera flex (full)", "has_quality": true, "qualities": [], "compat": "all" },
+    { "name_ar": "كاميرا خلفية كاملة", "name_en": "rear camera (full)", "has_quality": true, "qualities": [], "compat": "all" },
+    { "name_ar": "سماعة بدون فلاته", "name_en": "speaker (no flex)", "has_quality": true, "qualities": [], "compat": "all" },
+    { "name_ar": "جرس", "name_en": "loudspeaker / buzzer", "has_quality": true, "qualities": [], "compat": "all" },
+    { "name_ar": "هزاز", "name_en": "vibrator", "has_quality": true, "qualities": [], "compat": "all" },
+    { "name_ar": "فلاته فوليوم", "name_en": "volume flex", "has_quality": true, "qualities": [], "compat": "all" },
+    { "name_ar": "بورده كاملة", "name_en": "logic board (full)", "has_quality": true, "qualities": [], "compat": "range_0_7_plus_xr", "notes": "الموديلات iPhone 6 → 8 Plus + iPhone XR." },
+    { "name_ar": "بورده كاملة طبقتين", "name_en": "logic board (2-layer, full)", "has_quality": true, "qualities": [], "compat": "from_x", "notes": "من iPhone X." },
+    { "name_ar": "بورده علوية", "name_en": "logic board (upper)", "has_quality": true, "qualities": [], "compat": "from_x", "notes": "من iPhone X." },
+    { "name_ar": "بورده سفلية", "name_en": "logic board (lower)", "has_quality": true, "qualities": [], "compat": "from_x", "notes": "من iPhone X." },
+    { "name_ar": "طقم مسامير كامل", "name_en": "full screw set", "has_quality": true, "qualities": [], "compat": "all" },
+    { "name_ar": "طقم مسامير داخلي", "name_en": "internal screw set", "has_quality": true, "qualities": [], "compat": "all" },
+    { "name_ar": "مسمارين خارجي", "name_en": "two external screws", "has_quality": true, "qualities": [], "compat": "all" },
+    { "name_ar": "باك لايت شاشة", "name_en": "screen backlight", "has_quality": true, "qualities": [], "compat": "backlight", "notes": "الموديلات LCD: iPhone 6 → 8 Plus + iPhone 11 + iPhone XR." },
+    { "name_ar": "لاصق شاشة جهتين (DOUBLE FACE)", "name_en": "double-face screen adhesive", "has_quality": true, "qualities": [], "compat": "all" },
+    { "name_ar": "فلاته واي فاي", "name_en": "wifi flex", "has_quality": true, "qualities": [], "compat": "all" },
+    { "name_ar": "فلاته واير ليس", "name_en": "wireless charging flex", "has_quality": true, "qualities": [], "compat": "from_8", "notes": "من iPhone 8." },
+    { "name_ar": "فلاته FACE ID", "name_en": "face id flex", "has_quality": true, "qualities": [], "compat": "from_x", "notes": "من iPhone X. (ملاحظة: SE2/SE3 تستخدم Touch ID وليس Face ID)." },
+    { "name_ar": "فلاته بصمة إصبع", "name_en": "fingerprint flex", "has_quality": true, "qualities": [], "compat": "range_0_7", "notes": "الموديلات iPhone 6 → 8 Plus. (ملاحظة: SE2/SE3 أيضاً بها بصمة)." },
+    { "name_ar": "بطارية", "name_en": "battery", "has_quality": true, "has_part_brand": true, "qualities": ["خلع", "برند", "كوبي"], "compat": "all", "notes": "برندات بأسماء مختلفة تُضاف لاحقاً." }
+  ]
+}
